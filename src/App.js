@@ -4,6 +4,7 @@ import { storage } from "./index";
 
 const App = () => {
   const [gameImg, setGameImg] = useState("");
+  const [coords, setCoords] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,13 +19,32 @@ const App = () => {
     fetchData();
   }, [gameImg]);
 
+  useEffect(() => {
+    const handleMouseClick = (event) => {
+      setCoords({
+        x: event.clientX - event.target.offsetLeft,
+        y: event.clientY - event.target.offsetTop,
+      });
+    };
+
+    window.addEventListener("click", handleMouseClick);
+
+    return () => {
+      window.removeEventListener("click", handleMouseClick);
+    };
+  }, []);
+
   return (
     <div
       className="w-full h-screen bg-center bg-cover"
       style={{
         backgroundImage: `url(${gameImg})`,
       }}
-    ></div>
+    >
+      <h2>
+        Coords: {coords.x} {coords.y}
+      </h2>
+    </div>
   );
 };
 
