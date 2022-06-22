@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { ref, getDownloadURL } from "firebase/storage";
 import { storage } from "./index";
+import Box from "./components/Box";
 
 const App = () => {
   const [gameImg, setGameImg] = useState("");
   const [coords, setCoords] = useState({ x: 0, y: 0 });
+  const [boxDisplay, setBoxDisplay] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,6 +27,7 @@ const App = () => {
         x: event.clientX - event.target.offsetLeft,
         y: event.clientY - event.target.offsetTop,
       });
+      setBoxDisplay((prevState) => !prevState);
     };
 
     window.addEventListener("click", handleMouseClick);
@@ -44,6 +47,7 @@ const App = () => {
       <h2>
         Coords: {coords.x} {coords.y}
       </h2>
+      {boxDisplay ? <Box x={coords.x} y={coords.y} /> : null}
     </div>
   );
 };
