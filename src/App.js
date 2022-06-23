@@ -11,6 +11,12 @@ const App = () => {
 
   const [boxDisplay, setBoxDisplay] = useState(false);
 
+  const handleAlert = (e) => {
+    e.preventDefault();
+    const id = e.target.dataset.id;
+    document.getElementById(id).classList.toggle("hidden");
+  };
+
   const handleListClick = (val) => {
     const data = { name: val, coords: globalCoords };
     const requestOptions = {
@@ -20,7 +26,13 @@ const App = () => {
     };
     fetch("http://localhost:5001/wheres-waldo-c76a2/us-central1/helloHttp", requestOptions)
       .then((response) => response.json())
-      .then((res) => console.log(res));
+      .then((res) => {
+        if (res) {
+          document.getElementById("alert-success").classList.toggle("hidden");
+        } else {
+          document.getElementById("alert-fail").classList.toggle("hidden");
+        }
+      });
   };
 
   useEffect(() => {
@@ -46,7 +58,9 @@ const App = () => {
         x: event.clientX - event.target.offsetLeft,
         y: event.clientY - event.target.offsetTop,
       });
-      setBoxDisplay((prevState) => !prevState);
+      if (!event.target.dataset.id) {
+        setBoxDisplay((prevState) => !prevState);
+      }
     };
 
     window.addEventListener("click", handleMouseClick);
@@ -71,6 +85,44 @@ const App = () => {
       <h2 style={{ backgroundColor: "white" }}>
         Global coords: {globalCoords.x} {globalCoords.y}
       </h2>
+      <div id="alert-fail" className="hidden flex p-4 bg-red-100 rounded-lg dark:bg-red-200" role="alert">
+        <div className="ml-3 text-sm font-medium text-red-700 dark:text-red-800">Try again!</div>
+        <button
+          type="button"
+          onClick={(e) => handleAlert(e)}
+          data-id="alert-fail"
+          className="ml-auto -mx-1.5 -my-1.5 bg-red-100 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex h-8 w-8 dark:bg-red-200 dark:text-red-600 dark:hover:bg-red-300"
+          aria-label="Close"
+        >
+          <span className="sr-only">Close</span>
+          <svg className="w-5 h-5 pointer-events-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div id="alert-success" className="hidden flex p-4 mb-4 bg-green-100 rounded-lg dark:bg-green-200" role="alert">
+        <div className="ml-3 text-sm font-medium text-green-700 dark:text-green-800">You found someone!</div>
+        <button
+          type="button"
+          onClick={(e) => handleAlert(e)}
+          data-id="alert-success"
+          className="ml-auto -mx-1.5 -my-1.5 bg-green-100 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex h-8 w-8 dark:bg-green-200 dark:text-green-600 dark:hover:bg-green-300"
+          aria-label="Close"
+        >
+          <span className="sr-only">Close</span>
+          <svg className="w-5 h-5 pointer-events-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
       {boxDisplay && (
         <div>
           <Box x={coords.x} y={coords.y} />
