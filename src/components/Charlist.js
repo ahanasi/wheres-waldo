@@ -1,13 +1,14 @@
 import { v4 as uuidv4 } from "uuid";
 
-const CharList = ({ x, y }) => {
+const CharList = ({ x, y, handleListClick }) => {
   return (
     <div className="fixed inset-0">
       <ul className="flex flex-col items-center text-xs absolute translate -translate-y-1/2 -translate-x-1/2" style={{ left: x + 65, top: y + 60 }}>
         <li className="bg-white border border-gray-200 w-24 text-gray-900" key={uuidv4()}>
           <button
+            onClick={(e) => handleListClick(e.target.innerHTML)}
             type="button"
-            class="
+            className="
           w-full
           text-left
           px-2
@@ -25,9 +26,10 @@ const CharList = ({ x, y }) => {
         </li>
         <li className="bg-white border border-gray-200 w-24 text-gray-900" key={uuidv4()}>
           <button
+            onClick={(e) => handleListClick(e.target.innerHTML)}
             aria-current="true"
             type="button"
-            class="
+            className="
           text-left
           px-2
           py-2
@@ -45,9 +47,10 @@ const CharList = ({ x, y }) => {
         </li>
         <li className="bg-white border border-gray-200 w-24 text-gray-900" key={uuidv4()}>
           <button
+            onClick={(e) => handleListClick(e.target.innerHTML)}
             aria-current="true"
             type="button"
-            class="
+            className="
           text-left
           px-2
           py-2
@@ -65,9 +68,10 @@ const CharList = ({ x, y }) => {
         </li>
         <li className="bg-white border border-gray-200 w-24 text-gray-900" key={uuidv4()}>
           <button
+            onClick={(e) => handleListClick(e.target.innerHTML)}
             aria-current="true"
             type="button"
-            class="
+            className="
           text-left
           px-2
           py-2
