@@ -8,6 +8,7 @@ const App = () => {
   const [gameImg, setGameImg] = useState("");
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
+  const [boxComponents, setBoxComponents] = useState([]);
 
   const [boxDisplay, setBoxDisplay] = useState(false);
 
@@ -29,6 +30,7 @@ const App = () => {
       .then((res) => {
         if (res) {
           document.getElementById("alert-success").classList.toggle("hidden");
+          setBoxComponents((prevState) => [...prevState, <Box x={coords.x} y={coords.y} color={"Chartreuse"} />]);
         } else {
           document.getElementById("alert-fail").classList.toggle("hidden");
         }
@@ -97,9 +99,9 @@ const App = () => {
           <span className="sr-only">Close</span>
           <svg className="w-5 h-5 pointer-events-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
         </button>
@@ -116,16 +118,17 @@ const App = () => {
           <span className="sr-only">Close</span>
           <svg className="w-5 h-5 pointer-events-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
         </button>
       </div>
+      <div className="canvas">{boxComponents}</div>
       {boxDisplay && (
         <div>
-          <Box x={coords.x} y={coords.y} />
+          <Box x={coords.x} y={coords.y} color={"black"} />
           <CharList x={coords.x} y={coords.y} handleListClick={handleListClick} />
         </div>
       )}

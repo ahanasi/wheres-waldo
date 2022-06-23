@@ -1,4 +1,4 @@
-const Box = ({ x, y }) => {
+const Box = ({ x, y, color }) => {
   return (
     <div
       style={{
@@ -16,7 +16,7 @@ const Box = ({ x, y }) => {
           top: y,
         }}
       >
-        <rect x={10} y={10} width={30} height={30} style={{ fill: "transparent", stroke: "black", strokeWidth: 3 }} />
+        <rect x={10} y={10} width={30} height={30} style={{ fill: "transparent", stroke: color, strokeWidth: 3 }} />
       </svg>
     </div>
   );
