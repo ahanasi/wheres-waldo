@@ -10,12 +10,36 @@ admin.initializeApp({
 const db = admin.firestore();
 
 //Populate db
-const docRef = db.collection("easy").doc("waldo");
-docRef.set({
+const waldoRef = db.collection("easy").doc("waldo");
+waldoRef.set({
   x_min: 1218,
   x_max: 1248,
   y_min: 692,
   y_max: 722,
+});
+
+const wilmaRef = db.collection("easy").doc("wilma");
+wilmaRef.set({
+  x_min: 692,
+  x_max: 722,
+  y_min: 409,
+  y_max: 439,
+});
+
+const odlawRef = db.collection("easy").doc("odlaw");
+odlawRef.set({
+  x_min: 444,
+  x_max: 474,
+  y_min: 613,
+  y_max: 643,
+});
+
+const wizRef = db.collection("easy").doc("wizard whitebeard");
+wizRef.set({
+  x_min: 85,
+  x_max: 115,
+  y_min: 720,
+  y_max: 750,
 });
 
 //Get Coordinates

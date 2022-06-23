@@ -2516,3 +2516,802 @@ INFO: Detected HTTP/2 connection.
 [info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
 [debug] [2022-06-23T06:10:48.426Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: IDLE"}}
 [debug] [2022-06-23T06:10:48.426Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Your function timed out after ~60s. To configure this timeout, see\n      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation."}}
+[info] >  /opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634 {"user":"/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m /opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634"}}
+[info] >              throw new Error("Function timed out."); {"user":"            throw new Error(\"Function timed out.\");","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m             throw new Error(\"Function timed out.\");"}}
+[info] >              ^ {"user":"            ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m             ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Error: Function timed out."}}
+[info] >      at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634:19) {"user":"    at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634:19)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634:19)"}}
+[info] >      at listOnTimeout (node:internal/timers:564:17) {"user":"    at listOnTimeout (node:internal/timers:564:17)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at listOnTimeout (node:internal/timers:564:17)"}}
+[info] >      at process.processTimers (node:internal/timers:507:7) {"user":"    at process.processTimers (node:internal/timers:507:7)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTimers (node:internal/timers:507:7)"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Node.js v18.4.0 {"user":"Node.js v18.4.0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.4.0"}}
+[debug] [2022-06-23T06:11:17.370Z] [worker-us-central1-helloHttp-2a14f09d-0d39-49fc-ae11-17eef67870b0]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-2a14f09d-0d39-49fc-ae11-17eef67870b0]: exited"}}
+[debug] [2022-06-23T06:11:17.370Z] [worker-us-central1-helloHttp-2a14f09d-0d39-49fc-ae11-17eef67870b0]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-2a14f09d-0d39-49fc-ae11-17eef67870b0]: FINISHED"}}
+[debug] [2022-06-23T06:11:17.370Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:11:19.852Z] Jun 23, 2022 12:11:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:11:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:11:43.751Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:11:43.751Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:11:43.751Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:11:43.752Z] [worker-pool] Cleaned up workers for us-central1-helloHttp: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-helloHttp: 2 --> 1"}}
+[debug] [2022-06-23T06:11:43.752Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:11:43.752Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18582.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18582.sock"}}
+[debug] [2022-06-23T06:11:43.752Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: BUSY"}}
+[debug] [2022-06-23T06:11:43.752Z] [runtime-status] [18582] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:11:43.753Z] [runtime-status] [18582] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:11:43.754Z] [runtime-status] [18582] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18582.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18582.sock"}}
+[debug] [2022-06-23T06:11:43.756Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:11:43.757Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:11:43.758Z] [runtime-status] [18582] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Ephemeral server handling POST request"}}
+[info] >  1248 {"user":1248,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 1248"}}
+[debug] [2022-06-23T06:11:43.768Z] [runtime-status] [18582] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:11:43.769Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: IDLE"}}
+[debug] [2022-06-23T06:11:43.769Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:11:46.519Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:11:46.519Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:11:46.519Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:11:46.519Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:11:46.520Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18582.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18582.sock"}}
+[debug] [2022-06-23T06:11:46.520Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: BUSY"}}
+[debug] [2022-06-23T06:11:46.520Z] [runtime-status] [18582] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:11:46.520Z] [runtime-status] [18582] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:11:46.521Z] [runtime-status] [18582] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18582.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18582.sock"}}
+[debug] [2022-06-23T06:11:46.521Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:11:46.521Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:11:46.523Z] [runtime-status] [18582] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Ephemeral server handling POST request"}}
+[info] >  1248 {"user":1248,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 1248"}}
+[debug] [2022-06-23T06:11:46.535Z] [runtime-status] [18582] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18582] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:11:46.536Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: IDLE"}}
+[debug] [2022-06-23T06:11:46.536Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:12:19.878Z] Jun 23, 2022 12:12:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:12:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:12:37.329Z] Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:12:37.330Z] Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:12:37.331Z] Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:12:37.376Z] Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:12:37.429Z] Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:12:37 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:13:02.081Z] File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-06-23T06:13:03.086Z] [worker-pool] Shutting down IDLE worker (us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:13:03.086Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: FINISHING"}}
+[debug] [2022-06-23T06:13:03.094Z] Validating nodejs source
+[debug] [2022-06-23T06:13:04.070Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-23T06:13:04.070Z] Building nodejs source
+[debug] [2022-06-23T06:13:04.070Z] Analyzing nodejs backend spec
+[debug] [2022-06-23T06:13:04.071Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-23T06:13:04.077Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: exited"}}
+[debug] [2022-06-23T06:13:04.077Z] [worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7fa27b87-34b6-4e5c-b97d-e51d8272079a]: FINISHED"}}
+[debug] [2022-06-23T06:13:04.199Z] Serving at port 9005
+
+[debug] [2022-06-23T06:13:04.393Z] Got response from /__/functions.yaml {"endpoints":{"helloHttp":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-23T06:13:04.404Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-23T06:13:04.404Z] Jun 23, 2022 12:13:04 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:13:04 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:13:29.943Z] Jun 23, 2022 12:13:29 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:13:29 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:13:34.421Z] Jun 23, 2022 12:13:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:13:34 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:14:20.346Z] File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-06-23T06:14:21.355Z] Validating nodejs source
+[debug] [2022-06-23T06:14:22.097Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-23T06:14:22.097Z] Building nodejs source
+[debug] [2022-06-23T06:14:22.097Z] Analyzing nodejs backend spec
+[debug] [2022-06-23T06:14:22.097Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-23T06:14:22.207Z] Serving at port 9005
+
+[debug] [2022-06-23T06:14:22.399Z] Got response from /__/functions.yaml {"endpoints":{"helloHttp":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-23T06:14:22.411Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-23T06:14:22.412Z] Jun 23, 2022 12:14:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:14:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:14:22.432Z] Jun 23, 2022 12:14:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:14:22 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:14:35.818Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:14:35.819Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:14:35.819Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:14:35.819Z] [worker-pool] Cleaned up workers for us-central1-helloHttp: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-helloHttp: 1 --> 0"}}
+[debug] [2022-06-23T06:14:35.822Z] [worker-pool] addWorker(us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:14:35.822Z] [worker-pool] Adding worker with key us-central1-helloHttp, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloHttp, total=1"}}
+[debug] [2022-06-23T06:14:35.823Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:14:35.823Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:35.823Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY"}}
+[debug] [2022-06-23T06:14:36.491Z] [runtime-status] [18737] Functions runtime initialized. {"cwd":"/Users/ahana/odin_react/wheres-waldo/functions","node_version":"18.4.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Functions runtime initialized. {\"cwd\":\"/Users/ahana/odin_react/wheres-waldo/functions\",\"node_version\":\"18.4.0\"}"}}
+[debug] [2022-06-23T06:14:36.492Z] [runtime-status] [18737] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Disabled runtime features: undefined"}}
+[debug] [2022-06-23T06:14:36.493Z] [runtime-status] [18737] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:14:36.494Z] [runtime-status] [18737] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:14:36.494Z] [runtime-status] [18737] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-23T06:14:36.495Z] [runtime-status] [18737] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:14:36.522Z] [runtime-status] [18737] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-23T06:14:36.522Z] [runtime-status] [18737] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:14:36.523Z] [runtime-status] [18737] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:14:36.523Z] [runtime-status] [18737] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:14:36.523Z] [runtime-status] [18737] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:14:36.523Z] [runtime-status] [18737] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:14:36.525Z] [runtime-status] [18737] initializeApp(DEFAULT) {"credential":{"implicit":true,"refreshToken":{"clientId":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","clientSecret":"j9iVZfS8kkCEFUPaAeJV0sAi","refreshToken":"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE","type":"authorized_user"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] initializeApp(DEFAULT) {\"credential\":{\"implicit\":true,\"refreshToken\":{\"clientId\":\"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com\",\"clientSecret\":\"j9iVZfS8kkCEFUPaAeJV0sAi\",\"refreshToken\":\"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE\",\"type\":\"authorized_user\"},\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2022-06-23T06:14:36.684Z] [runtime-status] [18737] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:14:36.686Z] [runtime-status] [18737] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:14:36.686Z] [runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:36.694Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:14:36.694Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:14:36.707Z] [runtime-status] [18737] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server handling POST request"}}
+[debug] [2022-06-23T06:14:36.708Z] Jun 23, 2022 12:14:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:14:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[info] >  722 {"user":722,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 722"}}
+[debug] [2022-06-23T06:14:36.719Z] [runtime-status] [18737] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:14:36.724Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE"}}
+[debug] [2022-06-23T06:14:36.724Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:14:42.450Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:14:42.451Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:14:42.451Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:14:42.451Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:14:42.451Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:42.451Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY"}}
+[debug] [2022-06-23T06:14:42.451Z] [runtime-status] [18737] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:14:42.452Z] [runtime-status] [18737] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:14:42.453Z] [runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:42.454Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:14:42.454Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:14:42.456Z] [runtime-status] [18737] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server handling POST request"}}
+[info] >  722 {"user":722,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 722"}}
+[debug] [2022-06-23T06:14:42.472Z] [runtime-status] [18737] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:14:42.472Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE"}}
+[debug] [2022-06-23T06:14:42.472Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:14:45.551Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:14:45.551Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:14:45.551Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:14:45.551Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:14:45.551Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:45.551Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY"}}
+[debug] [2022-06-23T06:14:45.552Z] [runtime-status] [18737] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:14:45.552Z] [runtime-status] [18737] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:14:45.553Z] [runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:45.554Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:14:45.554Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:14:45.557Z] [runtime-status] [18737] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server handling POST request"}}
+[info] >  722 {"user":722,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 722"}}
+[debug] [2022-06-23T06:14:45.571Z] [runtime-status] [18737] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:14:45.573Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE"}}
+[debug] [2022-06-23T06:14:45.573Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:14:47.922Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:14:47.922Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:14:47.922Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:14:47.922Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:14:47.922Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:47.922Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY"}}
+[debug] [2022-06-23T06:14:47.922Z] [runtime-status] [18737] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:14:47.923Z] [runtime-status] [18737] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:14:47.923Z] [runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:47.924Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:14:47.924Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:14:47.925Z] [runtime-status] [18737] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server handling POST request"}}
+[info] >  1248 {"user":1248,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 1248"}}
+[debug] [2022-06-23T06:14:47.934Z] [runtime-status] [18737] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:14:47.934Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE"}}
+[debug] [2022-06-23T06:14:47.934Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:14:52.689Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:14:52.690Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:14:52.690Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:14:52.690Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:14:52.690Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:52.690Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: BUSY"}}
+[debug] [2022-06-23T06:14:52.691Z] [runtime-status] [18737] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:14:52.692Z] [runtime-status] [18737] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:14:52.693Z] [runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18737.sock"}}
+[debug] [2022-06-23T06:14:52.693Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:14:52.693Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:14:52.695Z] [runtime-status] [18737] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server handling POST request"}}
+[info] >  722 {"user":722,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 722"}}
+[debug] [2022-06-23T06:14:52.706Z] [runtime-status] [18737] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18737] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:14:52.707Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: IDLE"}}
+[debug] [2022-06-23T06:14:52.707Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:15:36.730Z] Jun 23, 2022 12:15:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:15:36 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:16:28.487Z] File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-06-23T06:16:29.491Z] [worker-pool] Shutting down IDLE worker (us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:16:29.492Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: FINISHING"}}
+[debug] [2022-06-23T06:16:29.493Z] Validating nodejs source
+[debug] [2022-06-23T06:16:30.295Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-23T06:16:30.295Z] Building nodejs source
+[debug] [2022-06-23T06:16:30.295Z] Analyzing nodejs backend spec
+[debug] [2022-06-23T06:16:30.296Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-23T06:16:30.299Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: exited"}}
+[debug] [2022-06-23T06:16:30.299Z] [worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-f1a4e41f-4a68-4e85-a324-6a4c00f64f5f]: FINISHED"}}
+[debug] [2022-06-23T06:16:30.434Z] Serving at port 9005
+
+[debug] [2022-06-23T06:16:30.636Z] Got response from /__/functions.yaml {"endpoints":{"helloHttp":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-23T06:16:30.649Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-23T06:16:30.650Z] Jun 23, 2022 12:16:30 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:16:30 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:16:30.679Z] Jun 23, 2022 12:16:30 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:16:30 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:17:11.658Z] File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-06-23T06:17:12.665Z] Validating nodejs source
+[debug] [2022-06-23T06:17:13.404Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-23T06:17:13.404Z] Building nodejs source
+[debug] [2022-06-23T06:17:13.404Z] Analyzing nodejs backend spec
+[debug] [2022-06-23T06:17:13.404Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-23T06:17:13.515Z] Serving at port 9005
+
+[debug] [2022-06-23T06:17:13.707Z] Got response from /__/functions.yaml {"endpoints":{"helloHttp":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-23T06:17:13.720Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-23T06:17:13.720Z] Jun 23, 2022 12:17:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:17:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:17:14.409Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:17:14.410Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:17:14.410Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:17:14.410Z] [worker-pool] Cleaned up workers for us-central1-helloHttp: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-helloHttp: 1 --> 0"}}
+[debug] [2022-06-23T06:17:14.411Z] [worker-pool] addWorker(us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:17:14.411Z] [worker-pool] Adding worker with key us-central1-helloHttp, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloHttp, total=1"}}
+[debug] [2022-06-23T06:17:14.415Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:17:14.415Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock"}}
+[debug] [2022-06-23T06:17:14.416Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: BUSY"}}
+[debug] [2022-06-23T06:17:15.048Z] [runtime-status] [18792] Functions runtime initialized. {"cwd":"/Users/ahana/odin_react/wheres-waldo/functions","node_version":"18.4.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Functions runtime initialized. {\"cwd\":\"/Users/ahana/odin_react/wheres-waldo/functions\",\"node_version\":\"18.4.0\"}"}}
+[debug] [2022-06-23T06:17:15.049Z] [runtime-status] [18792] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Disabled runtime features: undefined"}}
+[debug] [2022-06-23T06:17:15.049Z] [runtime-status] [18792] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:17:15.050Z] [runtime-status] [18792] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:17:15.050Z] [runtime-status] [18792] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-23T06:17:15.050Z] [runtime-status] [18792] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:17:15.065Z] [runtime-status] [18792] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-23T06:17:15.065Z] [runtime-status] [18792] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:17:15.065Z] [runtime-status] [18792] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:17:15.066Z] [runtime-status] [18792] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:17:15.066Z] [runtime-status] [18792] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:17:15.066Z] [runtime-status] [18792] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:17:15.067Z] [runtime-status] [18792] initializeApp(DEFAULT) {"credential":{"implicit":true,"refreshToken":{"clientId":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","clientSecret":"j9iVZfS8kkCEFUPaAeJV0sAi","refreshToken":"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE","type":"authorized_user"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] initializeApp(DEFAULT) {\"credential\":{\"implicit\":true,\"refreshToken\":{\"clientId\":\"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com\",\"clientSecret\":\"j9iVZfS8kkCEFUPaAeJV0sAi\",\"refreshToken\":\"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE\",\"type\":\"authorized_user\"},\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2022-06-23T06:17:15.172Z] [runtime-status] [18792] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:17:15.172Z] [runtime-status] [18792] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:17:15.173Z] [runtime-status] [18792] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock"}}
+[debug] [2022-06-23T06:17:15.181Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:17:15.181Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:17:15.195Z] [runtime-status] [18792] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Ephemeral server handling POST request"}}
+[debug] [2022-06-23T06:17:15.196Z] Jun 23, 2022 12:17:15 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:17:15 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[info] >  474 {"user":474,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 474"}}
+[debug] [2022-06-23T06:17:15.208Z] [runtime-status] [18792] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:17:15.212Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: IDLE"}}
+[debug] [2022-06-23T06:17:15.212Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:17:20.878Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:17:20.879Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:17:20.879Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:17:20.879Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:17:20.879Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock"}}
+[debug] [2022-06-23T06:17:20.879Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: BUSY"}}
+[debug] [2022-06-23T06:17:20.879Z] [runtime-status] [18792] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:17:20.880Z] [runtime-status] [18792] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:17:20.881Z] [runtime-status] [18792] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock"}}
+[debug] [2022-06-23T06:17:20.882Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:17:20.884Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:17:20.887Z] [runtime-status] [18792] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Ephemeral server handling POST request"}}
+[info] >  474 {"user":474,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 474"}}
+[debug] [2022-06-23T06:17:20.899Z] [runtime-status] [18792] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:17:20.900Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: IDLE"}}
+[debug] [2022-06-23T06:17:20.900Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:17:23.547Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:17:23.547Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:17:23.547Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:17:23.547Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:17:23.547Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock"}}
+[debug] [2022-06-23T06:17:23.547Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: BUSY"}}
+[debug] [2022-06-23T06:17:23.548Z] [runtime-status] [18792] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:17:23.548Z] [runtime-status] [18792] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:17:23.550Z] [runtime-status] [18792] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18792.sock"}}
+[debug] [2022-06-23T06:17:23.550Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:17:23.551Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:17:23.553Z] [runtime-status] [18792] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Ephemeral server handling POST request"}}
+[info] >  474 {"user":474,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 474"}}
+[debug] [2022-06-23T06:17:23.568Z] [runtime-status] [18792] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18792] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:17:23.570Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: IDLE"}}
+[debug] [2022-06-23T06:17:23.570Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-23T06:17:45.212Z] Jun 23, 2022 12:17:45 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:17:45 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:18:50.333Z] Jun 23, 2022 12:18:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 23, 2022 12:18:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 23, 2022 12:18:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:18:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\nJun 23, 2022 12:18:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\nJun 23, 2022 12:18:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:18:50.337Z] Jun 23, 2022 12:18:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:18:50 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:18:57.915Z] File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-06-23T06:18:58.920Z] [worker-pool] Shutting down IDLE worker (us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:18:58.921Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: FINISHING"}}
+[debug] [2022-06-23T06:18:58.925Z] Validating nodejs source
+[debug] [2022-06-23T06:18:59.739Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-23T06:18:59.739Z] Building nodejs source
+[debug] [2022-06-23T06:18:59.739Z] Analyzing nodejs backend spec
+[debug] [2022-06-23T06:18:59.741Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-23T06:18:59.743Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: exited"}}
+[debug] [2022-06-23T06:18:59.744Z] [worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-1d69d184-a3a5-416b-ad2b-5cd3ec6c0599]: FINISHED"}}
+[debug] [2022-06-23T06:18:59.860Z] Serving at port 9005
+
+[debug] [2022-06-23T06:18:59.870Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-23T06:18:59.870Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:18:59.870Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:18:59.870Z] [worker-pool] Cleaned up workers for us-central1-helloHttp: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-helloHttp: 1 --> 0"}}
+[debug] [2022-06-23T06:18:59.871Z] [worker-pool] addWorker(us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:18:59.871Z] [worker-pool] Adding worker with key us-central1-helloHttp, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloHttp, total=1"}}
+[debug] [2022-06-23T06:18:59.871Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:18:59.871Z] [worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18814.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18814.sock"}}
+[debug] [2022-06-23T06:18:59.871Z] [worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: BUSY"}}
+[debug] [2022-06-23T06:19:00.073Z] Got response from /__/functions.yaml {"endpoints":{"helloHttp":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-23T06:19:00.081Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-23T06:19:00.087Z] Jun 23, 2022 12:19:00 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:19:00 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:19:00.095Z] Jun 23, 2022 12:19:00 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:19:00 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:19:00.479Z] [runtime-status] [18814] Functions runtime initialized. {"cwd":"/Users/ahana/odin_react/wheres-waldo/functions","node_version":"18.4.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Functions runtime initialized. {\"cwd\":\"/Users/ahana/odin_react/wheres-waldo/functions\",\"node_version\":\"18.4.0\"}"}}
+[debug] [2022-06-23T06:19:00.480Z] [runtime-status] [18814] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Disabled runtime features: undefined"}}
+[debug] [2022-06-23T06:19:00.481Z] [runtime-status] [18814] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:00.481Z] [runtime-status] [18814] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:00.481Z] [runtime-status] [18814] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-23T06:19:00.482Z] [runtime-status] [18814] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:00.496Z] [runtime-status] [18814] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-23T06:19:00.496Z] [runtime-status] [18814] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:19:00.497Z] [runtime-status] [18814] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:00.497Z] [runtime-status] [18814] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:00.497Z] [runtime-status] [18814] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:00.497Z] [runtime-status] [18814] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:19:00.498Z] [runtime-status] [18814] initializeApp(DEFAULT) {"credential":{"implicit":true,"refreshToken":{"clientId":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","clientSecret":"j9iVZfS8kkCEFUPaAeJV0sAi","refreshToken":"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE","type":"authorized_user"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] initializeApp(DEFAULT) {\"credential\":{\"implicit\":true,\"refreshToken\":{\"clientId\":\"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com\",\"clientSecret\":\"j9iVZfS8kkCEFUPaAeJV0sAi\",\"refreshToken\":\"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE\",\"type\":\"authorized_user\"},\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2022-06-23T06:19:00.607Z] [runtime-status] [18814] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:19:00.607Z] [runtime-status] [18814] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:19:00.608Z] [runtime-status] [18814] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18814.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18814.sock"}}
+[debug] [2022-06-23T06:19:00.618Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:19:00.618Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:19:00.631Z] [runtime-status] [18814] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Ephemeral server handling POST request"}}
+[debug] [2022-06-23T06:19:00.632Z] Jun 23, 2022 12:19:00 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:19:00 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[info] >  Error getting document TypeError: Cannot read properties of undefined (reading 'x_max') {"user":"Error getting document TypeError: Cannot read properties of undefined (reading 'x_max')","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Error getting document TypeError: Cannot read properties of undefined (reading 'x_max')"}}
+[info] >      at /Users/ahana/odin_react/wheres-waldo/functions/index.js:63:38 {"user":"    at /Users/ahana/odin_react/wheres-waldo/functions/index.js:63:38","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /Users/ahana/odin_react/wheres-waldo/functions/index.js:63:38"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}}
+[info] >      at async /Users/ahana/odin_react/wheres-waldo/functions/index.js:57:27 {"user":"    at async /Users/ahana/odin_react/wheres-waldo/functions/index.js:57:27","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async /Users/ahana/odin_react/wheres-waldo/functions/index.js:57:27"}}
+[info] >      at async runFunction (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9) {"user":"    at async runFunction (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async runFunction (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9)"}}
+[info] >      at async runHTTPS (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5) {"user":"    at async runHTTPS (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async runHTTPS (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5)"}}
+[info] >      at async handler (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17) {"user":"    at async handler (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async handler (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17)"}}
+[debug] [2022-06-23T06:19:00.646Z] [runtime-status] [18814] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18814] Ephemeral server survived."}}
+[debug] [2022-06-23T06:19:06.835Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-06-23T06:19:06.835Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-06-23T06:19:06.835Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:19:06.836Z] [worker-pool] addWorker(us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:06.836Z] [worker-pool] Adding worker with key us-central1-helloHttp, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloHttp, total=2"}}
+[debug] [2022-06-23T06:19:06.836Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:06.836Z] [worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18819.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18819.sock"}}
+[debug] [2022-06-23T06:19:06.836Z] [worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: BUSY"}}
+[debug] [2022-06-23T06:19:07.167Z] [runtime-status] [18819] Functions runtime initialized. {"cwd":"/Users/ahana/odin_react/wheres-waldo/functions","node_version":"18.4.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Functions runtime initialized. {\"cwd\":\"/Users/ahana/odin_react/wheres-waldo/functions\",\"node_version\":\"18.4.0\"}"}}
+[debug] [2022-06-23T06:19:07.167Z] [runtime-status] [18819] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Disabled runtime features: undefined"}}
+[debug] [2022-06-23T06:19:07.168Z] [runtime-status] [18819] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:07.168Z] [runtime-status] [18819] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:07.169Z] [runtime-status] [18819] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-23T06:19:07.169Z] [runtime-status] [18819] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:07.183Z] [runtime-status] [18819] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-23T06:19:07.183Z] [runtime-status] [18819] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:19:07.184Z] [runtime-status] [18819] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:07.184Z] [runtime-status] [18819] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:07.184Z] [runtime-status] [18819] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:07.184Z] [runtime-status] [18819] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:19:07.185Z] [runtime-status] [18819] initializeApp(DEFAULT) {"credential":{"implicit":true,"refreshToken":{"clientId":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","clientSecret":"j9iVZfS8kkCEFUPaAeJV0sAi","refreshToken":"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE","type":"authorized_user"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] initializeApp(DEFAULT) {\"credential\":{\"implicit\":true,\"refreshToken\":{\"clientId\":\"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com\",\"clientSecret\":\"j9iVZfS8kkCEFUPaAeJV0sAi\",\"refreshToken\":\"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE\",\"type\":\"authorized_user\"},\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2022-06-23T06:19:07.290Z] [runtime-status] [18819] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:19:07.290Z] [runtime-status] [18819] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:19:07.291Z] [runtime-status] [18819] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18819.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18819.sock"}}
+[debug] [2022-06-23T06:19:07.299Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:19:07.299Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:19:07.310Z] [runtime-status] [18819] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Ephemeral server handling POST request"}}
+[debug] [2022-06-23T06:19:07.311Z] Jun 23, 2022 12:19:07 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:19:07 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[info] >  Error getting document TypeError: Cannot read properties of undefined (reading 'x_max') {"user":"Error getting document TypeError: Cannot read properties of undefined (reading 'x_max')","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Error getting document TypeError: Cannot read properties of undefined (reading 'x_max')"}}
+[info] >      at /Users/ahana/odin_react/wheres-waldo/functions/index.js:63:38 {"user":"    at /Users/ahana/odin_react/wheres-waldo/functions/index.js:63:38","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /Users/ahana/odin_react/wheres-waldo/functions/index.js:63:38"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}}
+[info] >      at async /Users/ahana/odin_react/wheres-waldo/functions/index.js:57:27 {"user":"    at async /Users/ahana/odin_react/wheres-waldo/functions/index.js:57:27","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async /Users/ahana/odin_react/wheres-waldo/functions/index.js:57:27"}}
+[info] >      at async runFunction (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9) {"user":"    at async runFunction (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async runFunction (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9)"}}
+[info] >      at async runHTTPS (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5) {"user":"    at async runHTTPS (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async runHTTPS (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5)"}}
+[info] >      at async handler (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17) {"user":"    at async handler (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async handler (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17)"}}
+[debug] [2022-06-23T06:19:07.326Z] [runtime-status] [18819] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18819] Ephemeral server survived."}}
+[debug] [2022-06-23T06:19:36.381Z] File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-06-23T06:19:37.386Z] [worker-pool] Marking BUSY worker to finish (us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Marking BUSY worker to finish (us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:37.386Z] [worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: FINISHING"}}
+[debug] [2022-06-23T06:19:37.386Z] [worker-pool] Marking BUSY worker to finish (us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Marking BUSY worker to finish (us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:37.386Z] [worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: FINISHING"}}
+[debug] [2022-06-23T06:19:37.387Z] Validating nodejs source
+[debug] [2022-06-23T06:19:38.080Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-23T06:19:38.080Z] Building nodejs source
+[debug] [2022-06-23T06:19:38.080Z] Analyzing nodejs backend spec
+[debug] [2022-06-23T06:19:38.080Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-23T06:19:38.189Z] Serving at port 9005
+
+[debug] [2022-06-23T06:19:38.372Z] Got response from /__/functions.yaml {"endpoints":{"helloHttp":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-23T06:19:38.385Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-23T06:19:38.387Z] Jun 23, 2022 12:19:38 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:19:38 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:19:40.478Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-06-23T06:19:40.478Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-06-23T06:19:40.478Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:19:40.480Z] [worker-pool] addWorker(us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:40.480Z] [worker-pool] Adding worker with key us-central1-helloHttp, total=3 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloHttp, total=3"}}
+[debug] [2022-06-23T06:19:40.480Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:40.480Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:40.480Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY"}}
+[debug] [2022-06-23T06:19:41.122Z] [runtime-status] [18841] Functions runtime initialized. {"cwd":"/Users/ahana/odin_react/wheres-waldo/functions","node_version":"18.4.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Functions runtime initialized. {\"cwd\":\"/Users/ahana/odin_react/wheres-waldo/functions\",\"node_version\":\"18.4.0\"}"}}
+[debug] [2022-06-23T06:19:41.122Z] [runtime-status] [18841] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Disabled runtime features: undefined"}}
+[debug] [2022-06-23T06:19:41.123Z] [runtime-status] [18841] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:41.123Z] [runtime-status] [18841] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:41.124Z] [runtime-status] [18841] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-23T06:19:41.124Z] [runtime-status] [18841] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:41.138Z] [runtime-status] [18841] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-23T06:19:41.138Z] [runtime-status] [18841] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:19:41.139Z] [runtime-status] [18841] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:41.139Z] [runtime-status] [18841] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:41.139Z] [runtime-status] [18841] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-23T06:19:41.139Z] [runtime-status] [18841] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ahana/odin_react/wheres-waldo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-06-23T06:19:41.140Z] [runtime-status] [18841] initializeApp(DEFAULT) {"credential":{"implicit":true,"refreshToken":{"clientId":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","clientSecret":"j9iVZfS8kkCEFUPaAeJV0sAi","refreshToken":"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE","type":"authorized_user"},"httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] initializeApp(DEFAULT) {\"credential\":{\"implicit\":true,\"refreshToken\":{\"clientId\":\"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com\",\"clientSecret\":\"j9iVZfS8kkCEFUPaAeJV0sAi\",\"refreshToken\":\"1//06tqSUJm9aFwBCgYIARAAGAYSNwF-L9IrwwZ07qUBgAl0RJdLUGY0PScOrGlK8arvNpc8_Do_d9zk58m8oBYannH6ucupTur3vGE\",\"type\":\"authorized_user\"},\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2022-06-23T06:19:41.245Z] [runtime-status] [18841] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:19:41.245Z] [runtime-status] [18841] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:19:41.247Z] [runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:41.255Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:19:41.255Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:19:41.267Z] [runtime-status] [18841] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server handling POST request"}}
+[debug] [2022-06-23T06:19:41.268Z] Jun 23, 2022 12:19:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:19:41 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[info] >  115 {"user":115,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 115"}}
+[debug] [2022-06-23T06:19:41.282Z] [runtime-status] [18841] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:19:41.285Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE"}}
+[debug] [2022-06-23T06:19:41.285Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-06-23T06:19:47.134Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-06-23T06:19:47.135Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-06-23T06:19:47.135Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:19:47.135Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:47.135Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:47.135Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY"}}
+[debug] [2022-06-23T06:19:47.136Z] [runtime-status] [18841] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:19:47.136Z] [runtime-status] [18841] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:19:47.137Z] [runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:47.139Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:19:47.139Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:19:47.141Z] [runtime-status] [18841] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server handling POST request"}}
+[info] >  115 {"user":115,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 115"}}
+[debug] [2022-06-23T06:19:47.155Z] [runtime-status] [18841] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:19:47.156Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE"}}
+[debug] [2022-06-23T06:19:47.156Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-06-23T06:19:53.454Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-06-23T06:19:53.454Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-06-23T06:19:53.455Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:19:53.455Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:53.455Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:53.455Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY"}}
+[debug] [2022-06-23T06:19:53.456Z] [runtime-status] [18841] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:19:53.456Z] [runtime-status] [18841] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:19:53.457Z] [runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:53.458Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:19:53.458Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:19:53.461Z] [runtime-status] [18841] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server handling POST request"}}
+[info] >  474 {"user":474,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 474"}}
+[debug] [2022-06-23T06:19:53.476Z] [runtime-status] [18841] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:19:53.477Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE"}}
+[debug] [2022-06-23T06:19:53.477Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-06-23T06:19:55.447Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-06-23T06:19:55.447Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-06-23T06:19:55.447Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:19:55.448Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:55.448Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:55.448Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY"}}
+[debug] [2022-06-23T06:19:55.448Z] [runtime-status] [18841] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:19:55.449Z] [runtime-status] [18841] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:19:55.449Z] [runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:55.449Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:19:55.450Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:19:55.452Z] [runtime-status] [18841] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server handling POST request"}}
+[info] >  474 {"user":474,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 474"}}
+[debug] [2022-06-23T06:19:55.463Z] [runtime-status] [18841] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:19:55.464Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE"}}
+[debug] [2022-06-23T06:19:55.464Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-06-23T06:19:57.208Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2022-06-23T06:19:57.208Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2022-06-23T06:19:57.208Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-06-23T06:19:57.208Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:19:57.208Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:57.208Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: BUSY"}}
+[debug] [2022-06-23T06:19:57.208Z] [runtime-status] [18841] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-06-23T06:19:57.209Z] [runtime-status] [18841] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Running helloHttp in signature http"}}
+[debug] [2022-06-23T06:19:57.209Z] [runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_18841.sock"}}
+[debug] [2022-06-23T06:19:57.210Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-23T06:19:57.211Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-06-23T06:19:57.213Z] [runtime-status] [18841] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server handling POST request"}}
+[info] >  115 {"user":115,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 115"}}
+[debug] [2022-06-23T06:19:57.228Z] [runtime-status] [18841] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [18841] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-06-23T06:19:57.230Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: IDLE"}}
+[debug] [2022-06-23T06:19:57.230Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Your function timed out after ~60s. To configure this timeout, see\n      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation."}}
+[info] >  /opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634 {"user":"/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m /opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634"}}
+[info] >              throw new Error("Function timed out."); {"user":"            throw new Error(\"Function timed out.\");","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m             throw new Error(\"Function timed out.\");"}}
+[info] >              ^ {"user":"            ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m             ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Error: Function timed out."}}
+[info] >      at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634:19) {"user":"    at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634:19)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634:19)"}}
+[info] >      at listOnTimeout (node:internal/timers:564:17) {"user":"    at listOnTimeout (node:internal/timers:564:17)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at listOnTimeout (node:internal/timers:564:17)"}}
+[info] >      at process.processTimers (node:internal/timers:507:7) {"user":"    at process.processTimers (node:internal/timers:507:7)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTimers (node:internal/timers:507:7)"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Node.js v18.4.0 {"user":"Node.js v18.4.0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.4.0"}}
+[debug] [2022-06-23T06:20:00.618Z] [worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: exited"}}
+[debug] [2022-06-23T06:20:00.618Z] [worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-5d74aa57-39b3-40c6-bfd0-5117f7f78bad]: FINISHED"}}
+[debug] [2022-06-23T06:20:00.618Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-23T06:20:00.850Z] File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/ahana/odin_react/wheres-waldo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-06-23T06:20:01.855Z] [worker-pool] Shutting down IDLE worker (us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-helloHttp)"}}
+[debug] [2022-06-23T06:20:01.855Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: FINISHING"}}
+[debug] [2022-06-23T06:20:01.856Z] Validating nodejs source
+[debug] [2022-06-23T06:20:02.487Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-23T06:20:02.488Z] Building nodejs source
+[debug] [2022-06-23T06:20:02.488Z] Analyzing nodejs backend spec
+[debug] [2022-06-23T06:20:02.488Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-23T06:20:02.489Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: exited"}}
+[debug] [2022-06-23T06:20:02.489Z] [worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-7dedf67b-7c2d-48be-9069-2e0efec8ae41]: FINISHED"}}
+[debug] [2022-06-23T06:20:02.573Z] Serving at port 9005
+
+[debug] [2022-06-23T06:20:02.718Z] Got response from /__/functions.yaml {"endpoints":{"helloHttp":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloHttp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-23T06:20:02.733Z] Jun 23, 2022 12:20:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:20:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-06-23T06:20:02.734Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-23T06:20:02.741Z] Jun 23, 2022 12:20:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 23, 2022 12:20:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Your function timed out after ~60s. To configure this timeout, see\n      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation."}}
+[info] >  /opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634 {"user":"/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m /opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634"}}
+[info] >              throw new Error("Function timed out."); {"user":"            throw new Error(\"Function timed out.\");","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m             throw new Error(\"Function timed out.\");"}}
+[info] >              ^ {"user":"            ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m             ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Error: Function timed out."}}
+[info] >      at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634:19) {"user":"    at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634:19)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Timeout._onTimeout (/opt/homebrew/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:634:19)"}}
+[info] >      at listOnTimeout (node:internal/timers:564:17) {"user":"    at listOnTimeout (node:internal/timers:564:17)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at listOnTimeout (node:internal/timers:564:17)"}}
+[info] >      at process.processTimers (node:internal/timers:507:7) {"user":"    at process.processTimers (node:internal/timers:507:7)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTimers (node:internal/timers:507:7)"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Node.js v18.4.0 {"user":"Node.js v18.4.0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.4.0"}}
+[debug] [2022-06-23T06:20:07.304Z] [worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: exited"}}
+[debug] [2022-06-23T06:20:07.304Z] [worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b2dccdda-b020-4630-bd69-af3735c13352]: FINISHED"}}
+[debug] [2022-06-23T06:20:07.305Z] [work-queue] {"queueLength":0,"workRunningCount":0}
