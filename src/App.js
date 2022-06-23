@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ref, getDownloadURL } from "firebase/storage";
 import { storage } from "./index";
 import Box from "./components/Box";
+import CharList from "./components/Charlist";
 
 const App = () => {
   const [gameImg, setGameImg] = useState("");
@@ -47,7 +48,12 @@ const App = () => {
       <h2>
         Coords: {coords.x} {coords.y}
       </h2>
-      {boxDisplay ? <Box x={coords.x} y={coords.y} /> : null}
+      {boxDisplay && (
+        <div>
+          <Box x={coords.x} y={coords.y} />
+          <CharList x={coords.x} y={coords.y} />
+        </div>
+      )}
     </div>
   );
 };
