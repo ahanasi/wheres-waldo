@@ -4,13 +4,26 @@ import { storage } from "./index";
 import Box from "./components/Box";
 import CharList from "./components/Charlist";
 
+var moment = require("moment");
+var momentDurationFormatSetup = require("moment-duration-format");
+
+momentDurationFormatSetup(moment);
+
 const App = () => {
   const [gameImg, setGameImg] = useState("");
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
   const [boxComponents, setBoxComponents] = useState([]);
-
   const [boxDisplay, setBoxDisplay] = useState(false);
+  const [seconds, setSeconds] = useState(0);
+  const [timerActive, setTimerActive] = useState(false);
+  const [winCount, setWinCount] = useState(0);
+  const [currentScore, setCurrentScore] = useState("0");
+
+  const resetTimer = () => {
+    setSeconds(0);
+    setTimerActive(false);
+  };
 
   const handleAlert = (e) => {
     e.preventDefault();
@@ -31,6 +44,7 @@ const App = () => {
         if (res) {
           document.getElementById("alert-success").classList.toggle("hidden");
           setBoxComponents((prevState) => [...prevState, <Box x={coords.x} y={coords.y} color={"Chartreuse"} />]);
+          setWinCount(winCount + 1);
         } else {
           document.getElementById("alert-fail").classList.toggle("hidden");
         }
@@ -43,12 +57,38 @@ const App = () => {
       getDownloadURL(imgRef)
         .then((url) => {
           setGameImg(url);
+          if (winCount < 4) {
+            setTimerActive(true);
+          }
         })
         .catch((error) => console.log(error));
     };
 
     fetchData();
-  }, [gameImg]);
+  }, [gameImg, winCount]);
+
+  useEffect(() => {
+    if (winCount === 4) {
+      let score = moment.duration(seconds, "seconds").format("hh[h] mm[m] ss[s]");
+      setCurrentScore(score);
+      resetTimer();
+    }
+  }, [winCount]);
+
+  useEffect(() => {
+    let interval = null;
+    if (timerActive) {
+      interval = setInterval(() => {
+        setSeconds((seconds) => seconds + 1);
+      }, 1000);
+    } else if (timerActive && seconds !== 0) {
+      clearInterval(interval);
+    }
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [timerActive, seconds]);
 
   useEffect(() => {
     const handleMouseClick = (event) => {
@@ -86,6 +126,10 @@ const App = () => {
     >
       <h2 style={{ backgroundColor: "white" }}>
         Global coords: {globalCoords.x} {globalCoords.y}
+        <br />
+        Timer: {seconds}s
+        <br />
+        Score: {currentScore}
       </h2>
       <div id="alert-fail" className="hidden flex p-4 bg-red-100 rounded-lg dark:bg-red-200" role="alert">
         <div className="ml-3 text-sm font-medium text-red-700 dark:text-red-800">Try again!</div>
