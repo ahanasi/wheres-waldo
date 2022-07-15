@@ -19,6 +19,9 @@ const Game = () => {
   const [timerActive, setTimerActive] = useState(false);
   const [winCount, setWinCount] = useState(0);
   const [currentScore, setCurrentScore] = useState("0");
+  const [nameInput, setNameInput] = useState("");
+
+  const scoreModal = document.querySelector(".leaderBoard-form");
 
   const resetTimer = () => {
     setSeconds(0);
@@ -29,6 +32,10 @@ const Game = () => {
     e.preventDefault();
     const id = e.target.dataset.id;
     document.getElementById(id).classList.toggle("hidden");
+  };
+
+  const handleInputChange = (e) => {
+    setNameInput(e.target.value);
   };
 
   const handleListClick = (val) => {
@@ -72,6 +79,7 @@ const Game = () => {
       let score = moment.duration(seconds, "seconds").format("hh[h] mm[m] ss[s]");
       setCurrentScore(score);
       resetTimer();
+      scoreModal.classList.toggle("hidden");
     }
   }, [winCount]);
 
@@ -107,14 +115,18 @@ const Game = () => {
 
     window.addEventListener("click", handleMouseClick);
 
+    if (winCount >= 4) {
+      window.removeEventListener("click", handleMouseClick);
+    }
+
     return () => {
       window.removeEventListener("click", handleMouseClick);
     };
-  }, []);
+  }, [winCount]);
 
   return (
     <div
-      className=""
+      className="gameWindow"
       style={{
         backgroundImage: `url(${gameImg})`,
         backgroundPosition: "center",
@@ -124,13 +136,13 @@ const Game = () => {
         height: "100vh",
       }}
     >
-      <h2 style={{ backgroundColor: "white" }}>
+      {/* <h2 style={{ backgroundColor: "white" }}>
         Global coords: {globalCoords.x} {globalCoords.y}
         <br />
         Timer: {seconds}s
         <br />
         Score: {currentScore}
-      </h2>
+      </h2> */}
       <div id="alert-fail" className="hidden flex p-4 bg-red-100 rounded-lg dark:bg-red-200" role="alert">
         <div className="ml-3 text-sm font-medium text-red-700 dark:text-red-800">Try again!</div>
         <button
@@ -176,6 +188,23 @@ const Game = () => {
           <CharList x={coords.x} y={coords.y} handleListClick={handleListClick} />
         </div>
       )}
+      <div className="leaderBoard-form flex h-full backdrop-blur-sm hidden">
+        <form className="bg-red-100 shadow-md rounded px-8 pt-6 pb-8 m-auto max-w-md z-9999" action="" method="post">
+          <p className="font-normal leading-tight text-4xl mt-0 mb-2 text-red-600 text-center">
+            You found everyone in <br />
+            <strong>{currentScore}</strong>
+          </p>
+          <br />
+          <p className="font-small leading-tight text-xl mt-0 mb-2 text-red-600">Enter your name for the leaderboards:</p>
+          <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="text"
+            name="hofInput"
+            value={nameInput}
+            onChange={handleInputChange}
+          />
+        </form>
+      </div>
     </div>
   );
 };

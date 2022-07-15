@@ -1,11 +1,6 @@
 const Box = ({ x, y, color }) => {
   return (
-    <div
-      style={{
-        zIndex: 9999,
-      }}
-      className="fixed inset-0 pointer-events-none"
-    >
+    <div className="fixed inset-0 pointer-events-none">
       <svg
         width={50}
         height={50}
