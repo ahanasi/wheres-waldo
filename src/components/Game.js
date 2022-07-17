@@ -60,6 +60,23 @@ const Game = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const data = { name: nameInput, time: seconds };
+    console.log(data);
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    };
+    fetch("http://localhost:5001/wheres-waldo-c76a2/us-central1/addScore", requestOptions)
+      .then((response) => response.json())
+      .then((res) => {
+        if (res) {
+          console.log(res);
+          console.log("Succeeded");
+        } else {
+          console.log("Failed");
+        }
+      });
   };
 
   useEffect(() => {

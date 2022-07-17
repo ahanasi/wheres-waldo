@@ -95,9 +95,17 @@ harryRef.set({
 
 //Add new score
 exports.addScore = functions.https.onRequest(async (req, res) => {
-  // Grab the text parameter
-  const name = req.body.name;
-  const time = req.body.time;
-  const writeResult = await scoresRef.add({ name: name, score: time });
-  res.json({ result: `Score with ID: ${writeResult.id} added.` });
+  res.set("Access-Control-Allow-Origin", "*");
+  if (req.method === "OPTIONS") {
+    // Send response to OPTIONS requests
+    res.set("Access-Control-Allow-Methods", "POST");
+    res.set("Access-Control-Allow-Headers", "Content-Type");
+    res.set("Access-Control-Max-Age", "3600");
+    res.status(204).send("");
+  } else {
+    const name = req.body.name;
+    const time = req.body.time;
+    const writeResult = await scoresRef.add({ name: name, score: time });
+    res.json({ result: `Score with ID: ${writeResult.id} added.` });
+  }
 });
