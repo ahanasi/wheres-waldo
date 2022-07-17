@@ -3,6 +3,7 @@ import { ref, getDownloadURL } from "firebase/storage";
 import { storage } from "../index";
 import Box from "./Box";
 import CharList from "./Charlist";
+import { v4 as uuidv4 } from "uuid";
 
 var moment = require("moment");
 var momentDurationFormatSetup = require("moment-duration-format");
@@ -50,7 +51,7 @@ const Game = () => {
       .then((res) => {
         if (res) {
           document.getElementById("alert-success").classList.toggle("hidden");
-          setBoxComponents((prevState) => [...prevState, <Box x={coords.x} y={coords.y} color={"Chartreuse"} />]);
+          setBoxComponents((prevState) => [...prevState, <Box x={coords.x} y={coords.y} color={"Chartreuse"} key={uuidv4()} />]);
           setWinCount(winCount + 1);
         } else {
           document.getElementById("alert-fail").classList.toggle("hidden");
@@ -60,7 +61,7 @@ const Game = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = { name: nameInput, time: seconds };
+    const data = { name: nameInput, time: currentScore };
     console.log(data);
     const requestOptions = {
       method: "POST",
@@ -97,8 +98,7 @@ const Game = () => {
 
   useEffect(() => {
     if (winCount === 4) {
-      let score = moment.duration(seconds, "seconds").format("hh[h] mm[m] ss[s]");
-      setCurrentScore(score);
+      setCurrentScore(seconds);
       resetTimer();
       scoreModal.classList.toggle("hidden");
     }
@@ -213,7 +213,7 @@ const Game = () => {
         <form className="bg-red-100 shadow-md rounded px-8 pt-6 pb-8 m-auto max-w-md z-9999" method="post" onSubmit={handleSubmit}>
           <p className="font-normal leading-tight text-4xl mt-0 mb-2 text-red-600 text-center">
             You found everyone in <br />
-            <strong>{currentScore}</strong>
+            <strong>{moment.duration(currentScore, "seconds").format("hh[h] mm[m] ss[s]")}</strong>
           </p>
           <br />
           <p className="font-small leading-tight text-xl mt-0 mb-2 text-red-600">Enter your name for the leaderboards:</p>
