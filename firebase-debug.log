@@ -1453,3 +1453,648 @@ INFO: Detected non-HTTP/2 connection.
 [debug] [2022-07-17T21:11:24.016Z] Jul 17, 2022 2:11:24 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
 INFO: channel closed
  {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:11:24 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2022-07-17T21:11:53.620Z] Jul 17, 2022 2:11:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:11:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:12:53.633Z] Jul 17, 2022 2:12:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:12:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:13:53.651Z] Jul 17, 2022 2:13:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:13:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:14:53.665Z] Jul 17, 2022 2:14:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:14:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:15:53.676Z] Jul 17, 2022 2:15:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:15:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:16:53.699Z] Jul 17, 2022 2:16:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:16:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:17:50.955Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T21:17:50.955Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T21:17:50.956Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T21:17:50.956Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T21:17:50.956Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T21:17:50.956Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T21:17:50.958Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T21:17:50.960Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T21:17:50.962Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T21:17:50.964Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T21:17:50.965Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T21:17:50.974Z] [runtime-status] [2488] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling POST request"}}
+[info] >  1248 {"user":1248,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 1248"}}
+[debug] [2022-07-17T21:17:50.995Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T21:17:51.000Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T21:17:51.001Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T21:17:53.717Z] Jul 17, 2022 2:17:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:17:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:17:53.834Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T21:17:53.835Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T21:17:53.835Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T21:17:53.835Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T21:17:53.835Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T21:17:53.835Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T21:17:53.835Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T21:17:53.836Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T21:17:53.836Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T21:17:53.836Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T21:17:53.836Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T21:17:53.839Z] [runtime-status] [2488] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling POST request"}}
+[info] >  115 {"user":115,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 115"}}
+[debug] [2022-07-17T21:17:53.847Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T21:17:53.847Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T21:17:53.847Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T21:17:56.959Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T21:17:56.959Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T21:17:56.959Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T21:17:56.959Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T21:17:56.959Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T21:17:56.960Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T21:17:56.960Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T21:17:56.960Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T21:17:56.961Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T21:17:56.962Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T21:17:56.962Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T21:17:56.963Z] [runtime-status] [2488] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling POST request"}}
+[info] >  722 {"user":722,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 722"}}
+[debug] [2022-07-17T21:17:56.976Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T21:17:56.978Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T21:17:56.978Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T21:17:59.828Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T21:17:59.828Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T21:17:59.828Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T21:17:59.829Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T21:17:59.829Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T21:17:59.829Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T21:17:59.829Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T21:17:59.830Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T21:17:59.830Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T21:17:59.830Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T21:17:59.831Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T21:17:59.832Z] [runtime-status] [2488] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling POST request"}}
+[info] >  474 {"user":474,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 474"}}
+[debug] [2022-07-17T21:17:59.848Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T21:17:59.848Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T21:17:59.849Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T21:18:02.234Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T21:18:02.235Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T21:18:02.235Z] Accepted request POST /wheres-waldo-c76a2/us-central1/addScore --> us-central1-addScore
+[debug] [2022-07-17T21:18:02.235Z] [worker-pool] submitWork(triggerId=us-central1-addScore) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-addScore)"}}
+[debug] [2022-07-17T21:18:02.239Z] [worker-us-central1-addScore-82e93027-517f-49fd-82b2-f7121cc5318f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2502.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addScore-82e93027-517f-49fd-82b2-f7121cc5318f]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2502.sock"}}
+[debug] [2022-07-17T21:18:02.239Z] [worker-us-central1-addScore-82e93027-517f-49fd-82b2-f7121cc5318f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addScore-82e93027-517f-49fd-82b2-f7121cc5318f]: BUSY"}}
+[debug] [2022-07-17T21:18:02.242Z] [runtime-status] [2502] Beginning invocation function addScore! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addScore"},"extension":{},"message":"[runtime-status] [2502] Beginning invocation function addScore!"}}
+[info] i  functions: Beginning execution of "addScore" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addScore"},"extension":{},"message":"Beginning execution of \"addScore\""}}
+[debug] [2022-07-17T21:18:02.242Z] [runtime-status] [2502] Running addScore in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addScore"},"extension":{},"message":"[runtime-status] [2502] Running addScore in signature http"}}
+[debug] [2022-07-17T21:18:02.245Z] [runtime-status] [2502] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2502.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addScore"},"extension":{},"message":"[runtime-status] [2502] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2502.sock"}}
+[debug] [2022-07-17T21:18:02.246Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T21:18:02.246Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/addScore, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/addScore, mapping to path=/"}}
+[debug] [2022-07-17T21:18:02.250Z] [runtime-status] [2502] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addScore"},"extension":{},"message":"[runtime-status] [2502] Ephemeral server handling POST request"}}
+[debug] [2022-07-17T21:18:02.267Z] [runtime-status] [2502] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addScore"},"extension":{},"message":"[runtime-status] [2502] Ephemeral server survived."}}
+[info] i  functions: Finished "addScore" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addScore"},"extension":{},"message":"Finished \"addScore\" in ~1s"}}
+[debug] [2022-07-17T21:18:02.268Z] [worker-us-central1-addScore-82e93027-517f-49fd-82b2-f7121cc5318f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addScore-82e93027-517f-49fd-82b2-f7121cc5318f]: IDLE"}}
+[debug] [2022-07-17T21:18:02.268Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T21:18:02.296Z] Jul 17, 2022 2:18:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:18:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:18:02.308Z] Jul 17, 2022 2:18:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:18:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:18:02.321Z] Jul 17, 2022 2:18:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:18:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:19:02.287Z] Jul 17, 2022 2:19:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:19:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:19:02.351Z] Jul 17, 2022 2:19:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:19:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:19:03.175Z] Jul 17, 2022 2:19:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:19:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:19:03.180Z] Jul 17, 2022 2:19:03 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose
+INFO: channel closed
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:19:03 PM com.google.cloud.datastore.emulator.firestore.webchannel.FirestoreV1WebChannelAdapter$FirestoreListenHandler onClose\nINFO: channel closed\n"}}
+[debug] [2022-07-17T21:19:49.884Z] Jul 17, 2022 2:19:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:19:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:20:36.757Z] Jul 17, 2022 2:20:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:20:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:21:36.798Z] Jul 17, 2022 2:21:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:21:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:22:36.817Z] Jul 17, 2022 2:22:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:22:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:23:36.839Z] Jul 17, 2022 2:23:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:23:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:24:23.258Z] Jul 17, 2022 2:24:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:24:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:25:23.283Z] Jul 17, 2022 2:25:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:25:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:26:39.310Z] Jul 17, 2022 2:26:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:26:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:27:39.351Z] Jul 17, 2022 2:27:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:27:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:28:39.373Z] Jul 17, 2022 2:28:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:28:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:29:39.408Z] Jul 17, 2022 2:29:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:29:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:30:02.564Z] Jul 17, 2022 2:30:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:30:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:30:02.564Z] Jul 17, 2022 2:30:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:30:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:30:02.566Z] Jul 17, 2022 2:30:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:30:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:30:02.627Z] Jul 17, 2022 2:30:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:30:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:30:39.451Z] Jul 17, 2022 2:30:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:30:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:31:39.475Z] Jul 17, 2022 2:31:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:31:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:32:39.507Z] Jul 17, 2022 2:32:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:32:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:33:39.544Z] Jul 17, 2022 2:33:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:33:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:34:39.580Z] Jul 17, 2022 2:34:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:34:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:35:39.626Z] Jul 17, 2022 2:35:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:35:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:36:39.655Z] Jul 17, 2022 2:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:36:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:37:29.181Z] Jul 17, 2022 2:37:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:37:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:38:29.202Z] Jul 17, 2022 2:38:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:38:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:39:29.226Z] Jul 17, 2022 2:39:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:39:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:40:29.245Z] Jul 17, 2022 2:40:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:40:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:41:29.267Z] Jul 17, 2022 2:41:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:41:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:42:29.287Z] Jul 17, 2022 2:42:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:42:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:43:29.311Z] Jul 17, 2022 2:43:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:43:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:44:29.339Z] Jul 17, 2022 2:44:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:44:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:45:29.372Z] Jul 17, 2022 2:45:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:45:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:46:29.393Z] Jul 17, 2022 2:46:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:46:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:47:29.426Z] Jul 17, 2022 2:47:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:47:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:48:29.474Z] Jul 17, 2022 2:48:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:48:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:49:29.523Z] Jul 17, 2022 2:49:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:49:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:50:29.556Z] Jul 17, 2022 2:50:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:50:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:51:48.577Z] Jul 17, 2022 2:51:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:51:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:52:48.608Z] Jul 17, 2022 2:52:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:52:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:53:48.644Z] Jul 17, 2022 2:53:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:53:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:54:48.681Z] Jul 17, 2022 2:54:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:54:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:55:48.717Z] Jul 17, 2022 2:55:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:55:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:56:48.756Z] Jul 17, 2022 2:56:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:56:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:57:48.806Z] Jul 17, 2022 2:57:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:57:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:58:48.859Z] Jul 17, 2022 2:58:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:58:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T21:59:48.889Z] Jul 17, 2022 2:59:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 2:59:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:00:48.929Z] Jul 17, 2022 3:00:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:00:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:01:48.964Z] Jul 17, 2022 3:01:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:01:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:02:48.989Z] Jul 17, 2022 3:02:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:02:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:03:49.035Z] Jul 17, 2022 3:03:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:03:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:04:49.061Z] Jul 17, 2022 3:04:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:04:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:05:49.077Z] Jul 17, 2022 3:05:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:05:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:06:49.101Z] Jul 17, 2022 3:06:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:06:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:07:49.124Z] Jul 17, 2022 3:07:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:07:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:08:49.175Z] Jul 17, 2022 3:08:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:08:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:09:49.184Z] Jul 17, 2022 3:09:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:09:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:10:43.598Z] Jul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\nJul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:10:43.600Z] Jul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:10:43.689Z] Jul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:10:43.694Z] Jul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:10:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:10:49.198Z] Jul 17, 2022 3:10:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:10:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:12:04.990Z] Jul 17, 2022 3:12:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:12:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:13:05.018Z] Jul 17, 2022 3:13:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:13:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:14:05.040Z] Jul 17, 2022 3:14:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:14:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:15:05.072Z] Jul 17, 2022 3:15:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:15:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:15:48.965Z] Jul 17, 2022 3:15:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:15:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:15:48.965Z] Jul 17, 2022 3:15:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:15:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:15:48.966Z] Jul 17, 2022 3:15:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:15:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:15:49.000Z] Jul 17, 2022 3:15:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:15:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:16:05.104Z] Jul 17, 2022 3:16:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:16:05 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:17:20.842Z] Jul 17, 2022 3:17:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:17:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:17:42.206Z] Jul 17, 2022 3:17:42 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:17:42 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:18:20.890Z] Jul 17, 2022 3:18:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:18:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:19:20.945Z] Jul 17, 2022 3:19:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:19:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:20:20.980Z] Jul 17, 2022 3:20:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:20:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:21:07.139Z] Jul 17, 2022 3:21:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:21:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:22:07.273Z] Jul 17, 2022 3:22:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:22:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:23:07.303Z] Jul 17, 2022 3:23:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:23:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:24:07.330Z] Jul 17, 2022 3:24:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:24:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:24:16.320Z] Jul 17, 2022 3:24:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jul 17, 2022 3:24:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jul 17, 2022 3:24:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:24:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\nJul 17, 2022 3:24:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\nJul 17, 2022 3:24:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:24:16.362Z] Jul 17, 2022 3:24:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:24:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:24:53.793Z] Jul 17, 2022 3:24:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:24:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:25:07.361Z] Jul 17, 2022 3:25:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:25:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:26:07.387Z] Jul 17, 2022 3:26:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:26:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:27:07.405Z] Jul 17, 2022 3:27:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:27:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:28:07.431Z] Jul 17, 2022 3:28:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:28:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:29:23.123Z] Jul 17, 2022 3:29:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:29:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:30:23.162Z] Jul 17, 2022 3:30:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:30:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:31:23.188Z] Jul 17, 2022 3:31:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:31:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:32:23.212Z] Jul 17, 2022 3:32:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:32:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:33:23.240Z] Jul 17, 2022 3:33:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:33:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:34:23.266Z] Jul 17, 2022 3:34:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:34:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:35:23.286Z] Jul 17, 2022 3:35:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:35:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:36:23.324Z] Jul 17, 2022 3:36:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:36:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:37:23.357Z] Jul 17, 2022 3:37:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:37:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:38:23.383Z] Jul 17, 2022 3:38:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:38:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:39:09.758Z] Jul 17, 2022 3:39:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:39:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:40:09.788Z] Jul 17, 2022 3:40:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:40:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:41:09.812Z] Jul 17, 2022 3:41:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:41:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:42:09.846Z] Jul 17, 2022 3:42:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:42:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:43:09.874Z] Jul 17, 2022 3:43:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:43:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:44:09.919Z] Jul 17, 2022 3:44:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:44:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:45:27.698Z] Jul 17, 2022 3:45:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:45:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:46:27.728Z] Jul 17, 2022 3:46:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:46:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:47:43.020Z] Jul 17, 2022 3:47:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:47:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:48:43.072Z] Jul 17, 2022 3:48:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:48:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:49:43.106Z] Jul 17, 2022 3:49:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:49:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:49:50.340Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T22:49:50.342Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T22:49:50.343Z] Accepted request OPTIONS /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T22:49:50.346Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T22:49:50.348Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:49:50.348Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T22:49:50.374Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T22:49:50.381Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T22:49:50.385Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:49:50.393Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T22:49:50.396Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T22:49:50.412Z] [runtime-status] [2488] Ephemeral server handling OPTIONS request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling OPTIONS request"}}
+[debug] [2022-07-17T22:49:50.423Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T22:49:50.424Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T22:49:50.424Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T22:49:50.425Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T22:49:50.425Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T22:49:50.425Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T22:49:50.425Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T22:49:50.425Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:49:50.425Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T22:49:50.435Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T22:49:50.436Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T22:49:50.437Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:49:50.437Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T22:49:50.437Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T22:49:50.440Z] [runtime-status] [2488] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling POST request"}}
+[info] >  1248 {"user":1248,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 1248"}}
+[debug] [2022-07-17T22:49:50.476Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T22:49:50.477Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T22:49:50.477Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T22:50:07.090Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T22:50:07.090Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T22:50:07.091Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T22:50:07.091Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T22:50:07.092Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:50:07.092Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T22:50:07.093Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T22:50:07.094Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T22:50:07.109Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:50:07.111Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T22:50:07.112Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T22:50:07.114Z] [runtime-status] [2488] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling POST request"}}
+[info] >  115 {"user":115,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 115"}}
+[debug] [2022-07-17T22:50:07.129Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T22:50:07.133Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T22:50:07.134Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T22:50:18.672Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T22:50:18.672Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T22:50:18.672Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T22:50:18.672Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T22:50:18.673Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:50:18.673Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T22:50:18.673Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T22:50:18.673Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T22:50:18.676Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:50:18.677Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T22:50:18.677Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T22:50:18.680Z] [runtime-status] [2488] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling POST request"}}
+[info] >  115 {"user":115,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 115"}}
+[debug] [2022-07-17T22:50:18.691Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T22:50:18.692Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T22:50:18.692Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T22:50:20.618Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T22:50:20.618Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T22:50:20.618Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T22:50:20.620Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T22:50:20.620Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:50:20.620Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T22:50:20.621Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T22:50:20.622Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T22:50:20.622Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:50:20.623Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T22:50:20.624Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T22:50:20.626Z] [runtime-status] [2488] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling POST request"}}
+[info] >  115 {"user":115,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 115"}}
+[debug] [2022-07-17T22:50:20.637Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T22:50:20.639Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T22:50:20.639Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T22:50:30.596Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-17T22:50:30.596Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-17T22:50:30.596Z] Accepted request POST /wheres-waldo-c76a2/us-central1/helloHttp --> us-central1-helloHttp
+[debug] [2022-07-17T22:50:30.596Z] [worker-pool] submitWork(triggerId=us-central1-helloHttp) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloHttp)"}}
+[debug] [2022-07-17T22:50:30.596Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: Assigning socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:50:30.596Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: BUSY"}}
+[debug] [2022-07-17T22:50:30.597Z] [runtime-status] [2488] Beginning invocation function helloHttp! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Beginning invocation function helloHttp!"}}
+[info] i  functions: Beginning execution of "helloHttp" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Beginning execution of \"helloHttp\""}}
+[debug] [2022-07-17T22:50:30.597Z] [runtime-status] [2488] Running helloHttp in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Running helloHttp in signature http"}}
+[debug] [2022-07-17T22:50:30.599Z] [runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Attempting to listen to socketPath: /var/folders/nl/t7g1p82n00vcxr1h3ff_74jr0000gn/T/fire_emu_2488.sock"}}
+[debug] [2022-07-17T22:50:30.600Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-17T22:50:30.600Z] [functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wheres-waldo-c76a2/us-central1/helloHttp, mapping to path=/"}}
+[debug] [2022-07-17T22:50:30.602Z] [runtime-status] [2488] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server handling POST request"}}
+[info] >  474 {"user":474,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"\u001b[90m> \u001b[39m 474"}}
+[debug] [2022-07-17T22:50:30.621Z] [runtime-status] [2488] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"[runtime-status] [2488] Ephemeral server survived."}}
+[info] i  functions: Finished "helloHttp" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloHttp"},"extension":{},"message":"Finished \"helloHttp\" in ~1s"}}
+[debug] [2022-07-17T22:50:30.623Z] [worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloHttp-b8f978fb-5b56-4785-8f5d-7794c3a7b545]: IDLE"}}
+[debug] [2022-07-17T22:50:30.623Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-17T22:50:43.136Z] Jul 17, 2022 3:50:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:50:45.905Z] Jul 17, 2022 3:50:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:50:45.906Z] Jul 17, 2022 3:50:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jul 17, 2022 3:50:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\nJul 17, 2022 3:50:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:50:45.935Z] Jul 17, 2022 3:50:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:50:48.001Z] Jul 17, 2022 3:50:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:50:50.026Z] Jul 17, 2022 3:50:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:50:52.044Z] Jul 17, 2022 3:50:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:50:54.064Z] Jul 17, 2022 3:50:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:50:56.084Z] Jul 17, 2022 3:50:56 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:56 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:50:58.108Z] Jul 17, 2022 3:50:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:50:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:00.136Z] Jul 17, 2022 3:51:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:02.161Z] Jul 17, 2022 3:51:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:04.184Z] Jul 17, 2022 3:51:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:06.210Z] Jul 17, 2022 3:51:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:08.232Z] Jul 17, 2022 3:51:08 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:08 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:10.252Z] Jul 17, 2022 3:51:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:12.273Z] Jul 17, 2022 3:51:12 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:12 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:14.294Z] Jul 17, 2022 3:51:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:16.316Z] Jul 17, 2022 3:51:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:18.340Z] Jul 17, 2022 3:51:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:20.364Z] Jul 17, 2022 3:51:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:22.388Z] Jul 17, 2022 3:51:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:24.409Z] Jul 17, 2022 3:51:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:26.432Z] Jul 17, 2022 3:51:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:28.456Z] Jul 17, 2022 3:51:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:30.480Z] Jul 17, 2022 3:51:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-17T22:51:32.501Z] Jul 17, 2022 3:51:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 17, 2022 3:51:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}

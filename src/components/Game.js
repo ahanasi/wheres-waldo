@@ -11,7 +11,7 @@ let momentDurationFormatSetup = require("moment-duration-format");
 
 momentDurationFormatSetup(moment);
 
-const Game = () => {
+const Game = ({ lvl }) => {
   const [gameImg, setGameImg] = useState("");
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
@@ -43,7 +43,7 @@ const Game = () => {
   };
 
   const handleListClick = (val) => {
-    const data = { name: val, coords: globalCoords };
+    const data = { name: val, coords: globalCoords, lvl: lvl };
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -85,7 +85,7 @@ const Game = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const imgRef = ref(storage, "easy_waldo.jpg");
+      const imgRef = ref(storage, `${lvl}_waldo.jpg`);
       getDownloadURL(imgRef)
         .then((url) => {
           setGameImg(url);
