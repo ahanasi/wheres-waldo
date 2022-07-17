@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore, connectFirestoreEmulator } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBc5ReqwYD11gd8Y-0S06KLd_K5_OEM0Fk",
@@ -32,7 +33,11 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 const app = initializeApp(firebaseConfig);
+const firestore = getFirestore(app);
+if (window.location.hostname === "localhost") {
+  connectFirestoreEmulator(firestore, "localhost", 8080);
+}
 const storage = getStorage(app);
 const analytics = getAnalytics(app);
 
-export { storage };
+export { storage, firestore };
