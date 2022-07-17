@@ -58,6 +58,10 @@ const Game = () => {
       });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       const imgRef = ref(storage, "easy_waldo.jpg");
@@ -189,7 +193,7 @@ const Game = () => {
         </div>
       )}
       <div className="leaderBoard-form flex h-full backdrop-blur-sm hidden">
-        <form className="bg-red-100 shadow-md rounded px-8 pt-6 pb-8 m-auto max-w-md z-9999" action="" method="post">
+        <form className="bg-red-100 shadow-md rounded px-8 pt-6 pb-8 m-auto max-w-md z-9999" method="post" onSubmit={handleSubmit}>
           <p className="font-normal leading-tight text-4xl mt-0 mb-2 text-red-600 text-center">
             You found everyone in <br />
             <strong>{currentScore}</strong>

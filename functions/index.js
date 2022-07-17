@@ -1,5 +1,6 @@
 // The Firebase Admin SDK to access Firestore.
 
+const { async } = require("@firebase/util");
 const admin = require("firebase-admin");
 const functions = require("firebase-functions");
 
@@ -73,3 +74,30 @@ exports.helloHttp = functions.https.onRequest(async (req, res) => {
 const isWithinBounds = (x, y, range) => {
   return x >= range.x_min && x <= range.x_max && y >= range.y_min && y <= range.y_max;
 };
+
+const scoresRef = db.collection("hof");
+const tomRef = scoresRef.doc();
+const dickRef = scoresRef.doc();
+const harryRef = scoresRef.doc();
+
+tomRef.set({
+  name: "Tom",
+  score: 2244,
+});
+dickRef.set({
+  name: "Dick",
+  score: 235,
+});
+harryRef.set({
+  name: "Harry",
+  score: 784,
+});
+
+//Add new score
+exports.addScore = functions.https.onRequest(async (req, res) => {
+  // Grab the text parameter
+  const name = req.body.name;
+  const time = req.body.time;
+  const writeResult = await scoresRef.add({ name: name, score: time });
+  res.json({ result: `Score with ID: ${writeResult.id} added.` });
+});
