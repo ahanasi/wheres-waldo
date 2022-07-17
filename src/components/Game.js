@@ -6,8 +6,8 @@ import Box from "./Box";
 import CharList from "./Charlist";
 import { v4 as uuidv4 } from "uuid";
 
-var moment = require("moment");
-var momentDurationFormatSetup = require("moment-duration-format");
+let moment = require("moment");
+let momentDurationFormatSetup = require("moment-duration-format");
 
 momentDurationFormatSetup(moment);
 
