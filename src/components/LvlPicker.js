@@ -4,6 +4,7 @@ import { storage } from "../index";
 import easy from "../assets/easy_waldo.jpg";
 import medium from "../assets/medium_waldo.jpg";
 import hard from "../assets/hard_waldo.jpg";
+import logo from "../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
 
 const LvlPicker = () => {
@@ -14,21 +15,6 @@ const LvlPicker = () => {
     const lvl = e.target.dataset.id;
     navigate("/" + lvl);
   };
-
-  const [logo, setLogo] = useState("");
-  useEffect(() => {
-    const fetchData = async () => {
-      const imgRef = ref(storage, `logo.svg`);
-      getDownloadURL(imgRef)
-        .then((url) => {
-          setLogo(url);
-        })
-        .catch((error) => console.log(error));
-    };
-
-    fetchData();
-  }, []);
-
   return (
     <div className="h-screen bg-slate-200">
       <div className="flex justify-center items-center h-screen">

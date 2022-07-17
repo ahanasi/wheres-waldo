@@ -55,8 +55,9 @@ exports.helloHttp = functions.https.onRequest(async (req, res) => {
   } else {
     try {
       const docName = req.body.name.toLowerCase();
-      const waldoCoords = await db
-        .collection("easy")
+      const lvl = req.body.lvl;
+      await db
+        .collection(lvl)
         .doc(docName)
         .get()
         .then((resolve) => {
@@ -105,7 +106,8 @@ exports.addScore = functions.https.onRequest(async (req, res) => {
   } else {
     const name = req.body.name;
     const time = req.body.time;
-    const writeResult = await scoresRef.add({ name: name, score: time });
+    const lvl = req.body.lvl;
+    const writeResult = await scoresRef.add({ name: name, score: time, level: lvl });
     res.json({ result: `Score with ID: ${writeResult.id} added.` });
   }
 });

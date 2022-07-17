@@ -64,7 +64,7 @@ const Game = ({ lvl }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = { name: nameInput, time: currentScore };
+    const data = { name: nameInput, time: currentScore, lvl: lvl };
     console.log(data);
     const requestOptions = {
       method: "POST",
