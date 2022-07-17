@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ref, getDownloadURL } from "firebase/storage";
+import { Navigate, useNavigate } from "react-router-dom";
 import { storage } from "../index";
 import Box from "./Box";
 import CharList from "./Charlist";
@@ -23,6 +24,8 @@ const Game = () => {
   const [nameInput, setNameInput] = useState("");
 
   const scoreModal = document.querySelector(".leaderBoard-form");
+
+  const navigate = useNavigate();
 
   const resetTimer = () => {
     setSeconds(0);
@@ -72,7 +75,7 @@ const Game = () => {
       .then((response) => response.json())
       .then((res) => {
         if (res) {
-          console.log(res);
+          navigate("/hof");
           console.log("Succeeded");
         } else {
           console.log("Failed");
