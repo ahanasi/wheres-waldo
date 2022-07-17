@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ref, getDownloadURL } from "firebase/storage";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { storage } from "../index";
 import Box from "./Box";
 import CharList from "./Charlist";
