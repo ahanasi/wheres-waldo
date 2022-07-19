@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ref, getDownloadURL } from "firebase/storage";
 import { useNavigate } from "react-router-dom";
 import { storage } from "../index";
@@ -15,6 +15,8 @@ const Game = ({ lvl }) => {
   const [gameImg, setGameImg] = useState("");
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
+  const [percentCoords, setPercentCoords] = useState({ x: 0, y: 0 });
+  const [imgSett, setImgSett] = useState({ width: 0, height: 0 });
   const [boxComponents, setBoxComponents] = useState([]);
   const [boxDisplay, setBoxDisplay] = useState(false);
   const [seconds, setSeconds] = useState(0);
@@ -22,8 +24,10 @@ const Game = ({ lvl }) => {
   const [winCount, setWinCount] = useState(0);
   const [currentScore, setCurrentScore] = useState("0");
   const [nameInput, setNameInput] = useState("");
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   const scoreModal = document.querySelector(".leaderBoard-form");
+  const imgRef = useRef(null);
 
   const navigate = useNavigate();
 
@@ -65,7 +69,6 @@ const Game = ({ lvl }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = { name: nameInput, time: currentScore, lvl: lvl };
-    console.log(data);
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -130,6 +133,12 @@ const Game = ({ lvl }) => {
         x: event.screenX,
         y: event.screenY,
       });
+      let offset = imgRef.current.getBoundingClientRect();
+      setImgSett({ width: offset.width, height: offset.height });
+      setPercentCoords({
+        x: Math.floor(((event.pageX - offset.left) / offset.width) * 10000) / 100,
+        y: Math.floor(((event.pageY - offset.top) / offset.height) * 10000) / 100,
+      });
       setCoords({
         x: event.clientX - event.target.offsetLeft,
         y: event.clientY - event.target.offsetTop,
@@ -150,25 +159,32 @@ const Game = ({ lvl }) => {
     };
   }, [winCount]);
 
+  // Watch for fullscreenchange
+  useEffect(() => {
+    function onFullscreenChange() {
+      setIsFullscreen(Boolean(document.fullscreenElement));
+      if (!isFullscreen) {
+        document.body.requestFullscreen();
+      }
+    }
+
+    document.addEventListener("fullscreenchange", onFullscreenChange);
+
+    return () => document.removeEventListener("fullscreenchange", onFullscreenChange);
+  }, []);
+
   return (
-    <div
-      className="gameWindow"
-      style={{
-        backgroundImage: `url(${gameImg})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        height: "100vh",
-      }}
-    >
-      {/* <h2 style={{ backgroundColor: "white" }}>
+    <div className="gameWindow h-screen flex justify-center items-center">
+      <div className="h-1/2 flex justify-center items-center">
+        <img src={gameImg} alt="Easy" ref={imgRef} className="object-center w-50" />
+      </div>
+      <h2 style={{ backgroundColor: "white" }}>
         Global coords: {globalCoords.x} {globalCoords.y}
         <br />
-        Timer: {seconds}s
+        Coords: {coords.x} {coords.y}
         <br />
-        Score: {currentScore}
-      </h2> */}
+        %Coords: {percentCoords.x} {percentCoords.y}
+      </h2>
       <div id="alert-fail" className="hidden flex p-4 bg-red-100 rounded-lg dark:bg-red-200" role="alert">
         <div className="ml-3 text-sm font-medium text-red-700 dark:text-red-800">Try again!</div>
         <button
@@ -210,7 +226,7 @@ const Game = ({ lvl }) => {
       <div className="canvas">{boxComponents}</div>
       {boxDisplay && (
         <div>
-          <Box x={coords.x} y={coords.y} color={"black"} />
+          <Box x={percentCoords.x} y={percentCoords.y} imgSett={imgSett} color={"black"} />
           <CharList x={coords.x} y={coords.y} handleListClick={handleListClick} />
         </div>
       )}

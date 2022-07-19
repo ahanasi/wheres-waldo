@@ -1,14 +1,14 @@
-const Box = ({ x, y, color }) => {
+const Box = ({ x, y, imgSett, color }) => {
   return (
     <div className="fixed inset-0 pointer-events-none">
       <svg
         width={50}
         height={50}
         viewBox="0 0 50 50"
-        className="absolute translate -translate-y-1/2 -translate-x-1/2"
+        className="absolute translate -translate-x-1/2 -translate-y-[110%]"
         style={{
-          left: x,
-          top: y,
+          left: (x * imgSett.width) / 100,
+          top: (y * imgSett.height) / 100,
         }}
       >
         <rect x={10} y={10} width={30} height={30} style={{ fill: "transparent", stroke: color, strokeWidth: 3 }} />
