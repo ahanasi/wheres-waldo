@@ -6,7 +6,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
-import { getAnalytics } from "firebase/analytics";
 import { getFirestore, connectFirestoreEmulator } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -38,6 +37,5 @@ if (window.location.hostname === "localhost") {
   connectFirestoreEmulator(firestore, "localhost", 8080);
 }
 const storage = getStorage(app);
-const analytics = getAnalytics(app);
 
 export { storage, firestore };

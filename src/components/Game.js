@@ -97,6 +97,7 @@ const Game = ({ lvl }) => {
     };
 
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gameImg, winCount]);
 
   useEffect(() => {
@@ -105,6 +106,7 @@ const Game = ({ lvl }) => {
       resetTimer();
       scoreModal.classList.toggle("hidden");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [winCount]);
 
   useEffect(() => {

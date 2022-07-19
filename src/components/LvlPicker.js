@@ -1,6 +1,3 @@
-import { useEffect, useState } from "react";
-import { ref, getDownloadURL } from "firebase/storage";
-import { storage } from "../index";
 import easy from "../assets/easy_waldo.jpg";
 import medium from "../assets/medium_waldo.jpg";
 import hard from "../assets/hard_waldo.jpg";

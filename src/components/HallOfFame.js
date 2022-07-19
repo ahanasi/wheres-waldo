@@ -43,6 +43,7 @@ const HallOfFame = () => {
       setMedList(res[1]);
       setHardList(res[2]);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
