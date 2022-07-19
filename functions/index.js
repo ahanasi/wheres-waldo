@@ -9,42 +9,10 @@ admin.initializeApp({
 });
 
 const db = admin.firestore();
-
-//Populate db
-const waldoRef = db.collection("easy").doc("waldo");
-waldoRef.set({
-  x_min: 1218,
-  x_max: 1248,
-  y_min: 692,
-  y_max: 722,
-});
-
-const wilmaRef = db.collection("easy").doc("wilma");
-wilmaRef.set({
-  x_min: 692,
-  x_max: 722,
-  y_min: 409,
-  y_max: 439,
-});
-
-const odlawRef = db.collection("easy").doc("odlaw");
-odlawRef.set({
-  x_min: 444,
-  x_max: 474,
-  y_min: 613,
-  y_max: 643,
-});
-
-const wizRef = db.collection("easy").doc("wizard whitebeard");
-wizRef.set({
-  x_min: 85,
-  x_max: 115,
-  y_min: 720,
-  y_max: 750,
-});
+const scoresRef = db.collection("hof");
 
 //Get Coordinates
-exports.helloHttp = functions.https.onRequest(async (req, res) => {
+exports.getCoords = functions.https.onRequest(async (req, res) => {
   res.set("Access-Control-Allow-Origin", "*");
   if (req.method === "OPTIONS") {
     // Send response to OPTIONS requests
@@ -75,24 +43,6 @@ exports.helloHttp = functions.https.onRequest(async (req, res) => {
 const isWithinBounds = (x, y, range) => {
   return x >= range.x_min && x <= range.x_max && y >= range.y_min && y <= range.y_max;
 };
-
-const scoresRef = db.collection("hof");
-const tomRef = scoresRef.doc();
-const dickRef = scoresRef.doc();
-const harryRef = scoresRef.doc();
-
-tomRef.set({
-  name: "Tom",
-  score: 2244,
-});
-dickRef.set({
-  name: "Dick",
-  score: 235,
-});
-harryRef.set({
-  name: "Harry",
-  score: 784,
-});
 
 //Add new score
 exports.addScore = functions.https.onRequest(async (req, res) => {
