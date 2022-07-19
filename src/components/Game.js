@@ -49,7 +49,7 @@ const Game = ({ lvl }) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     };
-    fetch("http://localhost:5001/wheres-waldo-c76a2/us-central1/helloHttp", requestOptions)
+    fetch("https://us-central1-wheres-waldo-c76a2.cloudfunctions.net/getCoords", requestOptions)
       .then((response) => response.json())
       .then((res) => {
         if (res) {
@@ -71,7 +71,7 @@ const Game = ({ lvl }) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     };
-    fetch("http://localhost:5001/wheres-waldo-c76a2/us-central1/addScore", requestOptions)
+    fetch("https://us-central1-wheres-waldo-c76a2.cloudfunctions.net/addScore", requestOptions)
       .then((response) => response.json())
       .then((res) => {
         if (res) {
