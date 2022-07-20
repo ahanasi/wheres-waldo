@@ -46,8 +46,7 @@ const Game = ({ lvl }) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     };
-    // fetch("https://us-central1-wheres-waldo-c76a2.cloudfunctions.net/getCoords", requestOptions)
-    fetch("http://localhost:5001/wheres-waldo-c76a2/us-central1/getCoords", requestOptions)
+    fetch("https://us-central1-wheres-waldo-c76a2.cloudfunctions.net/getCoords", requestOptions)
       .then((response) => response.json())
       .then((res) => {
         if (res) {
@@ -184,7 +183,7 @@ const Game = ({ lvl }) => {
           <CharList x={percentCoords.x} y={percentCoords.y} imgSett={imgSett} handleListClick={handleListClick} />
         </div>
       )}
-      <div className="leaderBoard-form flex h-full backdrop-blur-sm hidden">
+      <div className="leaderBoard-form fixed hidden inset-0 overflow-y-auto h-full w-full backdrop-blur-sm flex flex-col items-center justify-center">
         <form className="bg-red-100 shadow-md rounded px-8 pt-6 pb-8 m-auto max-w-md z-9999" method="post" onSubmit={handleSubmit}>
           <p className="font-normal leading-tight text-4xl mt-0 mb-2 text-red-600 text-center">
             You found everyone in <br />
