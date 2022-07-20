@@ -118,7 +118,6 @@ const Game = ({ lvl }) => {
     const handleMouseClick = (event) => {
       let offset = event.target.getBoundingClientRect();
       setImgSett({ width: offset.width, height: offset.height, top: offset.top, left: offset.left });
-      console.log({ x: Math.floor(((event.pageX - offset.left) / offset.width) * 10000) / 100, y: Math.floor(((event.pageY - offset.top) / offset.height) * 10000) / 100 });
       setPercentCoords({
         x: Math.floor(((event.pageX - offset.left) / offset.width) * 10000) / 100,
         y: Math.floor(((event.pageY - offset.top) / offset.height) * 10000) / 100,
