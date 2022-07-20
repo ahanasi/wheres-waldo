@@ -4,8 +4,8 @@ const CharList = ({ x, y, imgSett, handleListClick }) => {
   return (
     <div className="fixed inset-0">
       <ul
-        className="flex flex-col items-center text-xs absolute translate -translate-y-[160%] -translate-x-1/2"
-        style={{ left: (x * imgSett.width) / 100 + 55, top: (y * imgSett.height) / 100 + 130 }}
+        className="flex flex-col items-center text-xs absolute translate -translate-y-[20rem] -translate-x-[8rem]"
+        style={{ left: (x * imgSett.width) / 100 + imgSett.left, top: (y * imgSett.height) / 100 + imgSett.left + imgSett.top }}
       >
         <li className="bg-white border border-gray-200 w-24 text-gray-900" key={uuidv4()}>
           <button

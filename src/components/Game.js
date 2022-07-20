@@ -119,12 +119,13 @@ const Game = ({ lvl }) => {
 
   useEffect(() => {
     const handleMouseClick = (event) => {
+      console.log(event.target);
       setGlobalCoords({
         x: event.screenX,
         y: event.screenY,
       });
       let offset = event.target.getBoundingClientRect();
-      setImgSett({ width: offset.width, height: offset.height });
+      setImgSett({ width: offset.width, height: offset.height, top: offset.top, left: offset.left });
       console.log({ x: Math.floor(((event.pageX - offset.left) / offset.width) * 10000) / 100, y: Math.floor(((event.pageY - offset.top) / offset.height) * 10000) / 100 });
       setPercentCoords({
         x: Math.floor(((event.pageX - offset.left) / offset.width) * 10000) / 100,
@@ -167,7 +168,7 @@ const Game = ({ lvl }) => {
   return (
     <div className="gameWindow h-screen flex flex-col justify-center items-center">
       <div className="h-1/2 flex justify-center items-center">
-        <img src={gameImg} alt="Easy" className="object-center" width="1200px" />
+        <img src={gameImg} alt="Easy" className="object-center" width="1000px" />
       </div>
       {/* <h2 style={{ backgroundColor: "white" }}>
         Global coords: {globalCoords.x} {globalCoords.y}
