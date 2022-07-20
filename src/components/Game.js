@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { ref, getDownloadURL } from "firebase/storage";
 import { useNavigate } from "react-router-dom";
 import { storage } from "../index";
@@ -13,8 +13,6 @@ momentDurationFormatSetup(moment);
 
 const Game = ({ lvl }) => {
   const [gameImg, setGameImg] = useState("");
-  const [coords, setCoords] = useState({ x: 0, y: 0 });
-  const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
   const [percentCoords, setPercentCoords] = useState({ x: 0, y: 0 });
   const [imgSett, setImgSett] = useState({ width: 0, height: 0 });
   const [boxComponents, setBoxComponents] = useState([]);
@@ -24,7 +22,6 @@ const Game = ({ lvl }) => {
   const [winCount, setWinCount] = useState(0);
   const [currentScore, setCurrentScore] = useState("0");
   const [nameInput, setNameInput] = useState("");
-  const [isFullscreen, setIsFullscreen] = useState(false);
 
   const scoreModal = document.querySelector(".leaderBoard-form");
 
@@ -119,11 +116,6 @@ const Game = ({ lvl }) => {
 
   useEffect(() => {
     const handleMouseClick = (event) => {
-      console.log(event.target);
-      setGlobalCoords({
-        x: event.screenX,
-        y: event.screenY,
-      });
       let offset = event.target.getBoundingClientRect();
       setImgSett({ width: offset.width, height: offset.height, top: offset.top, left: offset.left });
       console.log({ x: Math.floor(((event.pageX - offset.left) / offset.width) * 10000) / 100, y: Math.floor(((event.pageY - offset.top) / offset.height) * 10000) / 100 });
@@ -131,10 +123,7 @@ const Game = ({ lvl }) => {
         x: Math.floor(((event.pageX - offset.left) / offset.width) * 10000) / 100,
         y: Math.floor(((event.pageY - offset.top) / offset.height) * 10000) / 100,
       });
-      setCoords({
-        x: event.clientX - event.target.offsetLeft,
-        y: event.clientY - event.target.offsetTop,
-      });
+
       if (!event.target.dataset.id) {
         setBoxDisplay((prevState) => !prevState);
       }
@@ -150,20 +139,6 @@ const Game = ({ lvl }) => {
       window.removeEventListener("click", handleMouseClick);
     };
   }, [winCount]);
-
-  // Watch for fullscreenchange
-  useEffect(() => {
-    function onFullscreenChange() {
-      setIsFullscreen(Boolean(document.fullscreenElement));
-      if (!isFullscreen) {
-        document.body.requestFullscreen();
-      }
-    }
-
-    document.addEventListener("fullscreenchange", onFullscreenChange);
-
-    return () => document.removeEventListener("fullscreenchange", onFullscreenChange);
-  }, []);
 
   return (
     <div className="gameWindow h-screen flex flex-col justify-center items-center">
