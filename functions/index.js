@@ -30,7 +30,7 @@ exports.getCoords = functions.https.onRequest(async (req, res) => {
         .get()
         .then((resolve) => {
           const actualLocation = resolve.data();
-          console.log(actualLocation.x_max);
+          console.log(req.body.coords.x, req.body.coords.y, actualLocation);
           const result = isWithinBounds(req.body.coords.x, req.body.coords.y, actualLocation);
           res.status(200).send(result);
         });

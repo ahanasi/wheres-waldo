@@ -5,7 +5,7 @@ const Box = ({ x, y, imgSett, color }) => {
         width={50}
         height={50}
         viewBox="0 0 50 50"
-        className="absolute translate -translate-x-1/2 -translate-y-[110%]"
+        className="absolute translate translate-x-[190%] -translate-y-1"
         style={{
           left: (x * imgSett.width) / 100,
           top: (y * imgSett.height) / 100,

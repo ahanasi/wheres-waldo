@@ -1,9 +1,12 @@
 import { v4 as uuidv4 } from "uuid";
 
-const CharList = ({ x, y, handleListClick }) => {
+const CharList = ({ x, y, imgSett, handleListClick }) => {
   return (
     <div className="fixed inset-0">
-      <ul className="flex flex-col items-center text-xs absolute translate -translate-y-1/2 -translate-x-1/2" style={{ left: x + 65, top: y + 60 }}>
+      <ul
+        className="flex flex-col items-center text-xs absolute translate -translate-y-[160%] -translate-x-1/2"
+        style={{ left: (x * imgSett.width) / 100 + 55, top: (y * imgSett.height) / 100 + 130 }}
+      >
         <li className="bg-white border border-gray-200 w-24 text-gray-900" key={uuidv4()}>
           <button
             onClick={(e) => handleListClick(e.target.innerHTML)}

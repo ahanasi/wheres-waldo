@@ -27,7 +27,6 @@ const Game = ({ lvl }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const scoreModal = document.querySelector(".leaderBoard-form");
-  const imgRef = useRef(null);
 
   const navigate = useNavigate();
 
@@ -36,32 +35,24 @@ const Game = ({ lvl }) => {
     setTimerActive(false);
   };
 
-  const handleAlert = (e) => {
-    e.preventDefault();
-    const id = e.target.dataset.id;
-    document.getElementById(id).classList.toggle("hidden");
-  };
-
   const handleInputChange = (e) => {
     setNameInput(e.target.value);
   };
 
   const handleListClick = (val) => {
-    const data = { name: val, coords: globalCoords, lvl: lvl };
+    const data = { name: val, coords: percentCoords, lvl: lvl };
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     };
-    fetch("https://us-central1-wheres-waldo-c76a2.cloudfunctions.net/getCoords", requestOptions)
+    // fetch("https://us-central1-wheres-waldo-c76a2.cloudfunctions.net/getCoords", requestOptions)
+    fetch("http://localhost:5001/wheres-waldo-c76a2/us-central1/getCoords", requestOptions)
       .then((response) => response.json())
       .then((res) => {
         if (res) {
-          document.getElementById("alert-success").classList.toggle("hidden");
-          setBoxComponents((prevState) => [...prevState, <Box x={coords.x} y={coords.y} color={"Chartreuse"} key={uuidv4()} />]);
+          setBoxComponents((prevState) => [...prevState, <Box x={percentCoords.x} y={percentCoords.y} imgSett={imgSett} color={"Chartreuse"} key={uuidv4()} />]);
           setWinCount(winCount + 1);
-        } else {
-          document.getElementById("alert-fail").classList.toggle("hidden");
         }
       });
   };
@@ -133,8 +124,9 @@ const Game = ({ lvl }) => {
         x: event.screenX,
         y: event.screenY,
       });
-      let offset = imgRef.current.getBoundingClientRect();
+      let offset = event.target.getBoundingClientRect();
       setImgSett({ width: offset.width, height: offset.height });
+      console.log({ x: Math.floor(((event.pageX - offset.left) / offset.width) * 10000) / 100, y: Math.floor(((event.pageY - offset.top) / offset.height) * 10000) / 100 });
       setPercentCoords({
         x: Math.floor(((event.pageX - offset.left) / offset.width) * 10000) / 100,
         y: Math.floor(((event.pageY - offset.top) / offset.height) * 10000) / 100,
@@ -174,60 +166,22 @@ const Game = ({ lvl }) => {
   }, []);
 
   return (
-    <div className="gameWindow h-screen flex justify-center items-center">
+    <div className="gameWindow h-screen flex flex-col justify-center items-center">
       <div className="h-1/2 flex justify-center items-center">
-        <img src={gameImg} alt="Easy" ref={imgRef} className="object-center w-50" />
+        <img src={gameImg} alt="Easy" className="object-center" width="1200px" />
       </div>
-      <h2 style={{ backgroundColor: "white" }}>
+      {/* <h2 style={{ backgroundColor: "white" }}>
         Global coords: {globalCoords.x} {globalCoords.y}
         <br />
         Coords: {coords.x} {coords.y}
         <br />
         %Coords: {percentCoords.x} {percentCoords.y}
-      </h2>
-      <div id="alert-fail" className="hidden flex p-4 bg-red-100 rounded-lg dark:bg-red-200" role="alert">
-        <div className="ml-3 text-sm font-medium text-red-700 dark:text-red-800">Try again!</div>
-        <button
-          type="button"
-          onClick={(e) => handleAlert(e)}
-          data-id="alert-fail"
-          className="ml-auto -mx-1.5 -my-1.5 bg-red-100 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex h-8 w-8 dark:bg-red-200 dark:text-red-600 dark:hover:bg-red-300"
-          aria-label="Close"
-        >
-          <span className="sr-only">Close</span>
-          <svg className="w-5 h-5 pointer-events-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fillRule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </div>
-      <div id="alert-success" className="hidden flex p-4 mb-4 bg-green-100 rounded-lg dark:bg-green-200" role="alert">
-        <div className="ml-3 text-sm font-medium text-green-700 dark:text-green-800">You found someone!</div>
-        <button
-          type="button"
-          onClick={(e) => handleAlert(e)}
-          data-id="alert-success"
-          className="ml-auto -mx-1.5 -my-1.5 bg-green-100 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex h-8 w-8 dark:bg-green-200 dark:text-green-600 dark:hover:bg-green-300"
-          aria-label="Close"
-        >
-          <span className="sr-only">Close</span>
-          <svg className="w-5 h-5 pointer-events-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fillRule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </div>
+      </h2> */}
       <div className="canvas">{boxComponents}</div>
       {boxDisplay && (
         <div>
           <Box x={percentCoords.x} y={percentCoords.y} imgSett={imgSett} color={"black"} />
-          <CharList x={coords.x} y={coords.y} handleListClick={handleListClick} />
+          <CharList x={percentCoords.x} y={percentCoords.y} imgSett={imgSett} handleListClick={handleListClick} />
         </div>
       )}
       <div className="leaderBoard-form flex h-full backdrop-blur-sm hidden">
